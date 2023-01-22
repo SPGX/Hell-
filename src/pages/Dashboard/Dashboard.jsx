@@ -86,7 +86,7 @@ const Dashboard = () => {
               <p className="progressP">Progress</p>
               <p className="p0">0%</p>
             </div>
-            <button>Add info</button>
+            <button onClick={() => navigate("/AddProperty")}>Add info</button>
           </div>
 
           <div className="BoxDBFrame6" style={{ marginRight: 0 }}>

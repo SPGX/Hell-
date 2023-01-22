@@ -71,7 +71,7 @@ const AddLegacyManager = () => {
                   className="boxAddLegacyManagerFame2"
                   onClick={() => setType(1)}
                 >
-                  <div className="iconAddLegacyManagerFame2_1" />
+                  <div className="iconAddLegacyManagerFame2_11" />
                   <p className="HTextAddLegacyManagerFame2">ทายาทผู้รับมรดก</p>
                 </button>
 

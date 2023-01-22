@@ -1,0 +1,320 @@
+.InPersonalFame2 {
+	text-align: left;
+	/* height: 40vh; */
+	border-radius: 12px;
+	/* margin: 20px; */
+	background: #ffffff;
+	box-shadow: 0px 0px 6px 4px rgb(202 202 202 / 25%);
+	border-radius: 7px;
+	margin-top: 15px;
+	width: 100%;
+}
+.HAddPersonalFame2 {
+	display: flex;
+	/* margin-left: 20px; */
+	justify-content: space-between;
+	align-items: baseline;
+}
+
+.HtextPersonalFame2 {
+	margin-bottom: 20px;
+	margin-top: 15px;
+}
+.iconPersonalFame2 {
+	background: url('../../img/surprised.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 30px;
+	height: 30px;
+	margin: 20px;
+}
+.formPersonalFame2_1 {
+	display: grid;
+	grid-template-columns: 52% auto;
+	margin-top: 30px;
+}
+.groupSelectyearPersonalFame2 {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	width: 97%;
+}
+.PhoneInput {
+	display: grid;
+	grid-template-columns: 32px 1fr 32px;
+	align-items: center;
+	width: 100%;
+}
+.PhoneInputInput {
+	flex: 1 1;
+	min-width: 0;
+	border: 1px solid transparent;
+}
+.BoxPhoneInput {
+	border: 1px solid #cccccc;
+	display: flex;
+	padding-left: 10px;
+	width: 36%;
+	border-radius: 5px;
+	background: #ffff;
+	margin-right: 12px;
+	height: 35px;
+}
+.PhoneInputCountrySelectArrow {
+	position: absolute;
+	left: 80px;
+}
+.inputformAddInsuranceFame2_2333 {
+	margin-left: 5px;
+	width: 138%;
+	margin-right: 22px;
+	border: 1px #cccccc solid;
+	border-radius: 5px;
+	padding: 8px;
+	font-family: 'Kanit';
+	font-style: normal;
+	font-size: 15px;
+	color: #a9a9a9;
+}
+.BoxPhone {
+	display: flex;
+}
+/* .PhoneInputInput {
+  display: none;
+} */
+.textphone {
+	position: absolute;
+	margin: 7px;
+	margin-left: 37px;
+	width: 45px;
+	height: 25px;
+	border-right: 1px solid #cccc;
+}
+
+.formPersonalFame2_2 {
+	text-align: left;
+	background: #e6e6e6;
+	margin-top: 15px;
+	width: 96.5%;
+	padding-left: 17px;
+	padding-bottom: 28px;
+}
+.HAddPersonalFame2_2 {
+	display: flex;
+	margin-left: 6px;
+	justify-content: flex-start;
+	align-items: center;
+}
+.formPersonalFame2_3 {
+	display: grid;
+	grid-template-columns: 52% auto;
+	/* margin-top: 40px; */
+}
+.formPersonalFame2_4 {
+	display: grid;
+	grid-template-columns: 52% auto;
+	margin-top: 15px;
+}
+.labelformAddInsuranceFame2_1 {
+	font-family: 'Kanit';
+	font-style: normal;
+	color: #828282;
+	font-size: 14px;
+	margin-bottom: 5px;
+	text-align: left;
+	height: 21px;
+}
+.inputformAddInsuranceFame2_1 {
+	width: 90%;
+	border: 1px #cccccc solid;
+	border-radius: 5px;
+	margin-right: 69px;
+	padding: 6px;
+	font-family: 'Kanit';
+	font-style: normal;
+	font-size: 15px;
+	color: #a9a9a9;
+}
+.AddLegacyManagerFame3 {
+	background: #ffffff;
+	box-shadow: 0px 0px 6px 4px rgb(202 202 202 / 25%);
+	border-radius: 7px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+.AddInsuranceFame2 {
+	background-color: #ffffff;
+	padding: 20px;
+	/* padding-right: 0px; */
+	padding-bottom: 40px;
+}
+
+.AddLegacyManagerFame2 {
+	text-align: left;
+}
+.rowAddLegacyManagerFame2 {
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+.boxAddLegacyManagerFame2 {
+	background: #ffffff;
+	display: inline-grid;
+	justify-items: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin: 10px;
+	border: 2px solid #f8d586;
+	border-radius: 12px;
+	width: 20.5vw;
+}
+.boxAddLegacyManagerFame2_1 {
+	background: #ffffff;
+	box-shadow: 0px 0px 6px 4px rgb(202 202 202 / 25%);
+	display: inline-grid;
+	justify-items: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin: 10px;
+	border: 1px solid transparent;
+	border-radius: 12px;
+	width: 20.5vw;
+}
+.iconAddLegacyManagerFame2_1 {
+	background: url('../../img/iconAddProperty.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 461px;
+	height: 350px;
+}
+.iconAddLegacyManagerFame2_2 {
+	background: url('../../img/iconAddLegacyManagerFame2_2.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 90px;
+	height: 90px;
+}
+.iconAddLegacyManagerFame2_3 {
+	background: url('../../img/iconAddLegacyManagerFame2_3.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 90px;
+	height: 90px;
+}
+.HTextAddLegacyManagerFame2 {
+	font-family: 'Kanit';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 25px;
+	color: #000000;
+}
+.AddLegacyManager_people {
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+.AddLegacyManager_people_2 {
+	display: initial;
+}
+.people {
+	width: 60px;
+	height: 60px;
+}
+.Boxpeople {
+	appearance: none;
+	display: flex;
+	background: #ffffff;
+	box-shadow: 0px 0px 6px 4px rgb(202 202 202 / 25%);
+	border-radius: 12px;
+	margin: 10px;
+	padding: 10px;
+	align-items: center;
+	border: 2px solid transparent;
+}
+.HBoxpeople {
+	font-family: 'Kanit';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	color: #000000;
+}
+.HTextDBFame2 {
+	font-family: 'Kanit';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 30px;
+	color: #000000;
+	margin-top: 10px;
+}
+.Title {
+	font-family: 'Kanit';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 26px;
+	color: #000000;
+	margin-top: 10px;
+}
+.Premium {
+	font-family: 'Kanit';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	color: #000000;
+	margin-top: 10px;
+}
+.PremiumGold {
+	font-family: 'Kanit';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	color: rgba(198, 137, 0, 1);
+	margin-top: 10px;
+	margin-left: 5px;
+}
+.Des {
+	font-family: 'Kanit';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24sp;
+	color: #828282;
+	margin-top: 10px;
+}
+input[type='radio'] {
+	appearance: none;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	padding: 3px;
+	background-clip: content-box;
+	border: 2px solid #bbbbbb;
+	border-radius: 50%;
+}
+input[type='radio']:checked {
+	background-color: #f8d586;
+	border: 2px solid #f8d586;
+}
+
+.formAddInsuranceFame2_1 {
+	display: grid;
+	grid-template-columns: auto auto;
+	margin-top: 40px;
+	width: 69.5vw;
+}
+.labelformAddLegacyManagerFame2 {
+	font-family: 'Kanit';
+	font-style: normal;
+	color: #828282;
+	font-size: 14px;
+	margin-bottom: 5px;
+	text-align: left;
+}
+.labelformAddLegacyManagerFame3 {
+	font-family: 'Kanit';
+	font-style: normal;
+	color: #000;
+	font-size: 14px;
+	margin-bottom: 5px;
+	text-align: left;
+	margin-top: 10px;
+}
