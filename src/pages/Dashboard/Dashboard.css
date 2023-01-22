@@ -1,0 +1,918 @@
+.DB {
+  background: #f9f9f9;
+  padding: 10px 15% 10px 15%;
+}
+.DBFame1 {
+  text-align: left;
+  text-align: left;
+  margin-bottom: 30px;
+  padding: 0 1rem;
+}
+.HTextDBFame1 {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  color: #0f1b50;
+}
+.HTextDBFame1_2 {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+
+  color: #5b5b5b;
+}
+
+.DBFame2 {
+  background: #ffffff;
+  box-shadow: 0px 2px 4px rgba(252, 185, 1, 0.1),
+    0px 0px 6px 2px rgba(252, 183, 1, 0.2);
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  text-align: left;
+  margin-bottom: 30px;
+  border-radius: 12px;
+}
+.DBFame2 img {
+  width: 8vw;
+  height: 8vw;
+  margin-right: 5px;
+}
+.BoxDBFame2 {
+  width: 49vw;
+  text-align: left;
+  display: flex;
+}
+.DBFame2 button {
+  background: linear-gradient(180deg, #fbbd00 0%, #fd8f01 100%);
+  border-radius: 12px;
+  color: #ffffff;
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  border: none;
+  height: 3vw;
+}
+.HTextDBFame2 {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: #000000;
+}
+.HTextDBFame2_1 {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  color: #5b5b5b;
+  width: 419px;
+}
+.BoxDBFame2_button {
+  padding: 25px;
+}
+
+.DBFame3 {
+  text-align: left;
+  /* background-color: #fbfbfb; */
+  margin-bottom: 30px;
+}
+.InDBFame3 {
+  display: flex;
+  justify-content: space-between;
+  background: #ffffff;
+  border-radius: 12px;
+}
+.InDBFame3_1 {
+  text-align: left;
+  height: 40vh;
+  padding: 25px;
+  /* padding-top: 0px; */
+  border-radius: 12px;
+}
+.BoxiconDB1Fame3 {
+  padding: 25px;
+  padding-left: 80px;
+}
+.BoxiconDB1Fame3 p {
+  font-family: "Kanit";
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 20px;
+  width: 500px;
+  width: 75%;
+}
+.iconDB1 {
+  background: url("../../img/iconDashboard2.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 105px;
+  margin-left: 45px;
+}
+
+.DBFame3BG {
+  background: url("../../img/BGDashboard1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 750px;
+  /* box-shadow: 0px 2px 6px 2px rgba(129, 129, 129, 0.1); */
+  border-radius: 12px;
+}
+
+.InDBFrame6 {
+  display: flex;
+  margin-bottom: 30px;
+}
+.BoxDBFrame6 {
+  background: #ffffff;
+  box-shadow: 0px 2px 6px 2px rgb(129 129 129 / 10%);
+  border-radius: 12px;
+  width: 100vw;
+  height: 25vw;
+  margin: 0px 2vw 0px 0px;
+  text-align: left;
+  padding: 2rem;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.HBoxDBFrame6 {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #5b5b5b;
+}
+.HBoxDBFrame6_1 {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  color: #000000;
+}
+.HBoxDBFrame6_2 {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  color: #5b5b5b;
+}
+.progress {
+  background: #f7f7f7;
+  border-radius: 100px;
+  align-items: center;
+  padding: 0 -4px;
+  display: flex;
+  height: 15px;
+  margin-bottom: 15px;
+}
+.progresstext {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -15px;
+}
+.progresstext p {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+.progress-value {
+  animation: load 3s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background: #fff;
+  height: 30px;
+  /* width: 0; */
+}
+
+.BoxDBFrame6 button {
+  align-items: center;
+  padding: 8px 20px;
+  width: 15vw;
+  height: 65px;
+  border: 1px solid #000000;
+  filter: drop-shadow(0px 6px 6px rgba(15, 27, 80, 0.2));
+  border-radius: 12px;
+  background: #ffffff;
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: #0f1b50;
+  margin-left: 2vw;
+  margin-top: 1vw;
+}
+
+@keyframes load {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+.iconDB01 {
+  background: url("../../img/iconDashboard2_1.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 70px;
+  margin-top: 50px;
+  margin-left: -15px;
+}
+
+.iconDB02 {
+  background: url("../../img/iconDashboard2_2.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 70px;
+  margin-top: 50px;
+  margin-left: -15px;
+}
+.iconDB03 {
+  background: url("../../img/iconDashboard2_3.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 70px;
+  margin-top: 50px;
+  margin-left: -15px;
+}
+.iconDB04 {
+  background: url("../../img/iconDashboard2_4.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 70px;
+  margin-top: 50px;
+  margin-left: -15px;
+}
+.iconDB05 {
+  background: url("../../img/iconDashboard2_5.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 70px;
+  margin-top: 50px;
+  margin-left: -15px;
+}
+.iconDB06 {
+  background: url("../../img/iconDashboard2_6.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 70px;
+  margin-top: 50px;
+  margin-left: -15px;
+}
+
+.DBFrame7 {
+  text-align: left;
+  margin-bottom: 30px;
+}
+.InDBFrame7 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.InDBFame7_1 {
+  text-align: center;
+  width: 116vw;
+  height: 35vh;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding-top: 100px;
+}
+.DBbuttonFrame7 {
+  border: 1px solid #c68900;
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  width: 13vw;
+  height: 3vw;
+  color: #c68900;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: inline-flex;
+  justify-content: space-evenly;
+  background-color: #ffffff;
+}
+.TextDBbuttonFrame7 {
+  margin-left: -10px;
+  margin-top: 3px;
+}
+.DBbuttonFrame7 p {
+  margin-top: 3px;
+}
+.iconDBbuttonplusFrame7 {
+  background: url("../../img/iconplusDB.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 27px;
+  height: 27px;
+  margin: 4px;
+}
+.iconDBFrame7_1 {
+  background: url("../../img/iconDashboard3.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  margin-left: 35%;
+  margin-bottom: 20px;
+}
+.iconDBFrame7_2 {
+  background: url("../../img/iconDashboard4.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  margin-left: 35%;
+  margin-bottom: 20px;
+}
+.iconDBFrame7_3 {
+  background: url("../../img/iconDashboard5.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  margin-left: 35%;
+  margin-bottom: 20px;
+}
+.iconDBFrame7_4 {
+  background: url("../../img/iconDashboard6.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  margin-left: 35%;
+  margin-bottom: 20px;
+}
+.iconDBFrame7_5 {
+  background: url("../../img/iconDashboard7.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  margin-left: 35%;
+  margin-bottom: 20px;
+}
+.BoxDBTextFrame7 {
+  text-align: center;
+  width: 16vw;
+  margin-left: 14%;
+  background-color: #f6f6f6;
+  padding: 15px;
+}
+.DBFrame7BG {
+  background: url("../../img/BGDashboard2.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200vw;
+  height: 26vw;
+  border-radius: 12px;
+  margin-left: -7px;
+}
+.DBFrame8BG {
+  background: url("../../img/BGDashboard3.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200vw;
+  height: 26vw;
+  border-radius: 12px;
+  margin-left: -7px;
+}
+.DBFrame9BG {
+  background: url("../../img/BGDashboard4.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200vw;
+  height: 26vw;
+  border-radius: 12px;
+  margin-left: -7px;
+}
+.DBFrame10BG {
+  background: url("../../img/BGDashboard5.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200vw;
+  height: 26vw;
+  border-radius: 12px;
+  margin-left: -7px;
+}
+.DBFrame11BG {
+  background: url("../../img/BGDashboard6.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200vw;
+  height: 26vw;
+  border-radius: 12px;
+  margin-left: -7px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .iconDB06 {
+    width: 7vw;
+    height: 10vw;
+    margin-left: 60px;
+  }
+  .iconDB01 {
+    width: 7vw;
+    height: 10vw;
+    margin-left: 60px;
+  }
+  .iconDB02 {
+    width: 7vw;
+    height: 10vw;
+    margin-left: 60px;
+  }
+  .iconDB03 {
+    width: 7vw;
+    height: 10vw;
+    margin-left: 60px;
+  }
+  .iconDB04 {
+    width: 7vw;
+    height: 10vw;
+    margin-left: 60px;
+  }
+  .iconDB05 {
+    width: 7vw;
+    height: 10vw;
+    margin-left: 60px;
+  }
+  .progresstext {
+    width: 23vw;
+  }
+  .progress {
+    height: 25px;
+    width: 23vw;
+  }
+  .BoxDBFrame6 button {
+    width: 16vw;
+    height: 50px;
+    font-size: 25px;
+    margin-left: 3vw;
+  }
+  .BoxDBFrame6_1 button {
+    width: 16vw;
+    height: 50px;
+    font-size: 25px;
+    margin-left: 3vw;
+  }
+  .HTextDBFame7 {
+    font-size: 30px;
+  }
+  .HFrame7_2 {
+    font-size: 20px;
+  }
+  .InDBFame7_1 button {
+    font-size: 20px;
+    width: 20vw;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .DBFame2 button {
+    height: 6vw;
+  }
+  .HTextDBFame2_1 {
+    font-size: 20px;
+  }
+  .HTextDBFame2 {
+    font-size: 25px;
+  }
+  .HTextDBFame1 {
+    font-size: 23px;
+  }
+  .HBoxDBFrame6_1 {
+    font-size: 17px;
+  }
+  .HBoxDBFrame6 {
+    font-size: 10px;
+  }
+  .HBoxDBFrame6_2 {
+    font-size: 12px;
+  }
+  .progresstext p {
+    font-size: 10px;
+  }
+  .progress {
+    height: 15px;
+    width: 20vw;
+  }
+  .progresstext {
+    width: 20vw;
+  }
+  .BoxDBFrame6 {
+    width: 28vw;
+    padding: 2rem;
+  }
+  .BoxDBFrame6_1 {
+    width: 28vw;
+    padding: 2rem;
+  }
+  .BoxDBFrame6 button {
+    width: 15vw;
+    height: 50px;
+    font-size: 17px;
+    margin-left: 3vw;
+  }
+  .BoxDBFrame6_1 button {
+    width: 15vw;
+    height: 50px;
+    font-size: 17px;
+    margin-left: 3vw;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .HTextDBFame2 {
+    font-size: 20px;
+  }
+  .HTextDBFame2_1 {
+    font-size: 15px;
+  }
+  .HTextDBFame1_2 {
+    font-size: 15px;
+  }
+  .DBFame3 {
+    padding: 1rem;
+  }
+  .InDBFame3_1 {
+    width: 84vw;
+    height: 20vh;
+    position: relative;
+    top: 4vh;
+  }
+  .DBFrame5 p {
+    font-size: 15px;
+  }
+  .InDBFrame6 {
+    display: grid;
+    margin-bottom: 0px;
+    justify-content: center;
+  }
+  .BoxDBFrame6 {
+    width: 55vw;
+    height: 65vw;
+    padding: 3rem;
+    padding-top: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 0px;
+  }
+  .BoxDBFrame6_1 {
+    width: 55vw;
+    height: 65vw;
+    padding: 3rem;
+    padding-top: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 0px;
+  }
+  .HBoxDBFrame6 {
+    font-size: 16px;
+  }
+  .HBoxDBFrame6_1 {
+    font-size: 25px;
+  }
+  .HBoxDBFrame6_2 {
+    font-size: 18px;
+  }
+  .iconDB06 {
+    width: 13vw;
+    height: 18vw;
+    margin-left: 60px;
+  }
+  .iconDB05 {
+    width: 13vw;
+    height: 18vw;
+    margin-left: 60px;
+  }
+  .iconDB04 {
+    width: 13vw;
+    height: 18vw;
+    margin-left: 60px;
+  }
+  .iconDB03 {
+    width: 13vw;
+    height: 18vw;
+    margin-left: 60px;
+  }
+  .iconDB02 {
+    width: 13vw;
+    height: 18vw;
+    margin-left: 60px;
+  }
+  .iconDB01 {
+    width: 13vw;
+    height: 18vw;
+    margin-left: 60px;
+  }
+  .progresstext {
+    width: 40vw;
+  }
+  .progresstext p {
+    font-size: 16px;
+  }
+  .progress {
+    height: 20px;
+    width: 40vw;
+  }
+  .BoxDBFrame6 button {
+    width: 30vw;
+    height: 50px;
+    font-size: 25px;
+    margin-left: 3vw;
+  }
+  .BoxDBFrame6_1 button {
+    width: 30vw;
+    height: 50px;
+    font-size: 25px;
+    margin-left: 3vw;
+  }
+  .DBFrame7 {
+    padding: 1rem;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .InDBFame7_1 {
+    top: 10vh;
+  }
+  .HTextDBFame7 {
+    font-size: 19px;
+  }
+  .HFrame7_2 {
+    font-size: 14px;
+  }
+  .InDBFame7_1 button {
+    font-size: 16px;
+    width: 25vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .DB {
+    padding: 0px;
+  }
+  .DBFame2 button {
+    height: 8vw;
+  }
+  .DBFame3 {
+    padding: 0px;
+  }
+  .InDBFame3 {
+    display: contents;
+    justify-content: unset;
+    padding: 0px;
+    margin-bottom: 0px;
+  }
+  .DBFame3BG {
+    width: 100vw;
+    height: 100vw;
+    right: 9vw;
+  }
+  .InDBFame3_1 {
+    width: 100vw;
+    height: 20vh;
+    text-align: center;
+    top: 0vh;
+    padding: 87px;
+    padding-top: 0px;
+  }
+  .HTextDBFame1 {
+    font-size: 30px;
+  }
+
+  .DBFrame7 {
+    padding: 0px;
+    margin-bottom: 0px;
+  }
+  .InDBFrame7 {
+    display: contents;
+    justify-content: unset;
+    padding: 0px;
+    height: 40vh;
+    margin-bottom: 0px;
+  }
+  .DBFrame7BG {
+    width: 100vw;
+    height: 80vw;
+    padding: 0px;
+    position: relative;
+    left: 0vw;
+  }
+  .DBFrame8BG {
+    width: 100vw;
+    height: 80vw;
+    padding: 0px;
+    position: relative;
+    left: 0vw;
+  }
+  .DBFrame9BG {
+    width: 100vw;
+    height: 80vw;
+    padding: 0px;
+    position: relative;
+    left: 0vw;
+  }
+  .DBFrame10BG {
+    width: 100vw;
+    height: 80vw;
+    padding: 0px;
+    position: relative;
+    left: 0vw;
+  }
+  .DBFrame11BG {
+    width: 100vw;
+    height: 80vw;
+    padding: 0px;
+    position: relative;
+    left: 0vw;
+  }
+  .InDBFame7_1 {
+    text-align: -webkit-center;
+    top: 0vh;
+    padding: 0rem;
+    height: 40vh;
+    padding-top: 10px;
+  }
+  .HTextDBFame7 {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+  .HFrame5_2 {
+    text-align: center;
+  }
+  .HFrame7_2 {
+    font-size: 16px;
+    text-align: center;
+  }
+  .InDBFame7_1 button {
+    font-size: 16px;
+    width: 40vw;
+  }
+  .BoxDBFrame6 {
+    width: 55vw;
+    height: 75vw;
+    padding: 3rem;
+    padding-top: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 0px;
+  }
+  .BoxDBFrame6_1 {
+    width: 55vw;
+    height: 75vw;
+    padding: 3rem;
+    padding-top: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 0px;
+  }
+  .HBoxDBFrame6_1 {
+    font-size: 20px;
+  }
+  .HBoxDBFrame6_2 {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 412px) {
+  .DBFame2 img {
+    width: 30vw;
+    height: 12vw;
+  }
+  .HTextDBFame2_1 {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .BoxDBFame2_button {
+    padding: 10px;
+  }
+  .DBFame2 button {
+    height: 7vw;
+    font-size: 15px;
+  }
+  .InDBFame3_1 {
+    width: 100vw;
+    height: 20vh;
+    text-align: center;
+    top: 0vh;
+    padding: 70px;
+    padding-top: 0px;
+  }
+  .DBFrame5 {
+    text-align: center;
+    background: #ffffff;
+    padding: 4rem;
+    height: 50vh;
+    margin-bottom: 30px;
+  }
+  .DBFrame5 img {
+    margin-bottom: 15px;
+    height: 15vh;
+  }
+  .BoxDBFrame4 img {
+    height: 7vh;
+  }
+  .BoxDBFrame6 {
+    width: 85vw;
+    height: 104vw;
+    padding: 4rem;
+    padding-top: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 0px;
+  }
+  .BoxDBFrame6_1 {
+    width: 85vw;
+    height: 104vw;
+    padding: 4rem;
+    padding-top: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 0px;
+  }
+  .progress {
+    height: 17px;
+    width: 55vw;
+  }
+  .progresstext {
+    width: 55vw;
+  }
+  .iconDB06 {
+    width: 22vw;
+    height: 30vw;
+    margin-left: 50px;
+  }
+  .iconDB05 {
+    width: 22vw;
+    height: 30vw;
+    margin-left: 50px;
+  }
+  .iconDB04 {
+    width: 22vw;
+    height: 30vw;
+    margin-left: 50px;
+  }
+  .iconDB03 {
+    width: 22vw;
+    height: 30vw;
+    margin-left: 50px;
+  }
+  .iconDB02 {
+    width: 22vw;
+    height: 30vw;
+    margin-left: 50px;
+  }
+  .iconDB01 {
+    width: 22vw;
+    height: 30vw;
+    margin-left: 50px;
+  }
+  .BoxDBFrame6 button {
+    width: 40vw;
+    height: 40px;
+    font-size: 25px;
+    margin-left: 3vw;
+  }
+  .BoxDBFrame6_1 button {
+    width: 40vw;
+    height: 40px;
+    font-size: 25px;
+    margin-left: 3vw;
+  }
+  .InDBFame7_1 button {
+    font-size: 16px;
+    width: 45vw;
+  }
+  .DBFame3BG {
+    width: 98vw;
+    height: 100vw;
+    right: 9vw;
+  }
+}

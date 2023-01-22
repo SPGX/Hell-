@@ -1,0 +1,185 @@
+.AddInsurance {
+  background: #f9f9f9;
+  padding: 10px 15% 10px 15%;
+}
+.AddInsuranceFame1 {
+  text-align: left;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+.HTextAddInsuranceFame1 {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  margin-right: 2px;
+  color: #c68900;
+}
+.HTextAddInsuranceFame1_2 {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  margin-right: 2px;
+  color: #000000;
+}
+
+.AddInsuranceFame2 {
+  background-color: #ffffff;
+  padding: 20px;
+  padding-right: 0px;
+}
+.HTextAddInsuranceFame2 {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  color: #0f1b50;
+  text-align: left;
+}
+.form {
+  text-align: left;
+}
+label {
+  font-family: "Kanit";
+  font-style: normal;
+  color: #828282;
+}
+.labelformAddInsuranceFame2 {
+  font-family: "Kanit";
+  font-style: normal;
+  color: #828282;
+  font-size: 14px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+/* bug */
+.basic-single {
+  width: 93%;
+  font-family: "Kanit";
+  font-style: normal;
+  font-size: 15px;
+  text-align: left;
+}
+.formAddInsuranceFame2_1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 40px;
+}
+
+.inputformAddInsuranceFame2_1 {
+  width: 92%;
+  border: 1px #cccccc solid;
+  border-radius: 5px;
+  margin-right: 69px;
+  padding: 8px;
+  font-family: "Kanit";
+  font-style: normal;
+  font-size: 15px;
+  color: #a9a9a9;
+}
+.formAddInsuranceFame2_2 {
+  display: grid;
+  grid-template-columns: auto;
+  margin-top: 40px;
+}
+.textareaformAddInsuranceFame2_1 {
+  width: 96%;
+  min-height: 100px;
+  resize: none;
+  border-radius: 8px;
+  border: 1px #cccccc solid;
+  padding: 0.5rem;
+  font-family: "Kanit";
+  font-style: normal;
+  font-size: 15px;
+  color: #a9a9a9;
+}
+
+.AddInsuranceFame3 {
+  background: #ffffff;
+  padding-bottom: 20px;
+}
+.HAddInsuranceFame3 {
+  display: flex;
+  border-bottom: 1px solid #ebebeb;
+}
+.HtextAddInsuranceFame3 {
+  margin-top: 25px;
+}
+.InAddInsuranceFame3 {
+  text-align: left;
+  /* height: 40vh; */
+  border-radius: 12px;
+  margin: 20px;
+  background: #ffffff;
+  box-shadow: 0px 0px 6px 4px rgb(202 202 202 / 25%);
+  border-radius: 7px;
+  margin-top: 0px;
+  width: 96%;
+}
+.iconAddInsuranceFame3 {
+  background: url("../../img/iconAddInsuranceFame3.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 105px;
+}
+
+.areaUploadAddInsuranceFame3 {
+  text-align: center;
+  width: 96%;
+  height: 100px;
+  font-family: "Kanit";
+  font-style: normal;
+  font-size: 15px;
+  color: #a9a9a9;
+  border: none;
+  background: #f7f7f7;
+  border-radius: 8px;
+  padding-top: 3rem;
+  margin: 18px;
+  margin-bottom: 50px;
+}
+.buttonUploadAddInsuranceFame3 {
+  width: 96%;
+  height: 50px;
+  font-family: "Kanit";
+  font-style: normal;
+  font-size: 25px;
+  font-weight: 600;
+  color: #0f1b50;
+  background: #ffffff;
+  border: 1px solid #0f1b50;
+  border-radius: 12px;
+  margin: 18px;
+  margin-top: 0px;
+}
+
+.cancel {
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 12px;
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center;
+  color: #000000;
+  width: 30%;
+  margin-right: 10px;
+}
+.save {
+  background: #d9d9d9;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center;
+  color: #ffffff;
+  width: 30%;
+}

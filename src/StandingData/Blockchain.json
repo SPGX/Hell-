@@ -1,0 +1,10 @@
+{
+    "Blockchain":[
+        {"id": "1","Value": "Ethereum (ETH)"},
+        {"id": "2","Value": "Polygon (MATIC)"},
+        {"id": "3","Value": "Solana (SOL)"},
+        {"id": "4","Value": "Binance(BNB)"},
+        {"id": "5","Value": "Bitkub (KUB)"},
+        {"id": "6","Value": "อื่นๆ"}
+    ]
+}

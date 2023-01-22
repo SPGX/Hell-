@@ -1,0 +1,14 @@
+{
+  "resourceName": "alrightsS3",
+  "policyUUID": "c6275355",
+  "bucketName": "alrightsbuckets3",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

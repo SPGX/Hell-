@@ -1,0 +1,305 @@
+.page1 {
+  margin: 5px 15% 0px 15%;
+  background-color: #fbfbfb;
+  height: 90vh;
+}
+.InFrameRegis1 {
+  display: flex;
+  justify-content: flex-start;
+  height: 65vh;
+  background: url("../../img/BGregister.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.InFrame1_1Regis1 {
+  text-align: left;
+  width: 25%;
+  margin-left: 5vw;
+  margin-top: 10vw;
+}
+.TextInFrame1_1Regis1 {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  color: #0f1b50;
+  margin: 25px;
+  width: 25vw;
+  text-align: left;
+}
+.TextInFrame1_1_2Regis1 {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  color: #5b5b5b;
+  margin: 25px;
+  width: 15vw;
+  text-align: left;
+}
+.InFrame1_2Regis1 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #fff;
+  position: relative;
+}
+.Htext2 {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+
+  color: #5b5b5b;
+}
+.Box {
+  position: relative;
+  top: 15vh;
+  text-align: center;
+}
+.InFrameRegis1_2 {
+  margin-top: 30px;
+}
+.InFrameRegis1_2 button {
+  padding: 12px 20px;
+  background: #c68900;
+  border-radius: 12px;
+  color: #ffff;
+  width: 255px;
+  border: none;
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  margin: 0px 25px 15px;
+}
+.BoxtextFrame {
+  margin: 0px;
+  margin-left: 25px;
+}
+.BoxtextFrame p {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  display: inline;
+}
+.Textp {
+  color: #c68900;
+  text-decoration: underline #c68900;
+}
+.from {
+  width: 79vw;
+  margin-left: 10vw;
+}
+.from input {
+  background: #ffffff;
+  border: 1px solid #bdbdbd;
+  border-radius: 4px;
+  width: 40vw;
+  height: 3vw;
+  margin-bottom: 20px;
+}
+.BoxRegister {
+  text-align: left;
+  display: inline-block;
+}
+.BoxRegister label {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #828282;
+}
+.BoxRegister p {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #828282;
+}
+.INBoxRegister2 button {
+  box-sizing: border-box;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #c68900;
+  border-radius: 12px;
+  border: none;
+  width: 18vw;
+  height: 3vw;
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+.TextRegisterbtt {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #5b5b5b;
+}
+.HTextRegister {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  text-align: center;
+  color: #0f1b50;
+  margin-top: 30px;
+}
+.HTextRegister2 {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: #5b5b5b;
+}
+.google {
+  background: transparent;
+  border: none;
+}
+.IconButtonregister {
+  position: absolute;
+  right: 30px;
+}
+.css-i4bv87-MuiSvgIcon-root {
+  position: absolute;
+}
+.from input {
+  background: #ffffff;
+  border: 1px solid #bdbdbd;
+  border-radius: 4px;
+  width: 40vw;
+  height: 3vw;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .InFrame1_1Regis1 {
+    width: 35%;
+  }
+  .InFrame1_2Regis1 {
+    width: 65%;
+    height: 90vh;
+  }
+  .page1 {
+    margin-top: 5px;
+    padding: 0px 15% 0px 15%;
+  }
+  .InFrameRegis1 {
+    height: auto;
+  }
+  .from input {
+    width: 40vw;
+    height: 5vw;
+  }
+  .INBoxRegister2 button {
+    width: 20vw;
+    height: 7vw;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .TextInFrame1_1_2Regis1 {
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 30px;
+    width: 20vw;
+  }
+  .TextInFrame1_1Regis1 {
+    font-size: 30px;
+  }
+  .from input {
+    width: 45vw;
+    height: 6vw;
+  }
+  .INBoxRegister2 button {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .page1 {
+    background: #b9b9b9;
+    text-align: -webkit-center;
+    padding: 0px;
+  }
+  .InFrameRegis1 {
+    display: contents;
+  }
+  .InFrame1_2Regis1 {
+    width: 100%;
+    height: 50vh;
+  }
+  .TextInFrame1_1Regis1 {
+    text-align: center;
+    width: 80%;
+    margin: 0px;
+  }
+  .TextInFrame1_1_2Regis1 {
+    width: 30vw;
+    margin: 0px;
+    font-size: 16px;
+  }
+  .InFrame1_1Regis1 button {
+    margin: 0px;
+  }
+  .BoxtextFrame {
+    margin: 0px;
+    width: 108%;
+  }
+  .BoxtextFrame p {
+    font-size: 15px;
+  }
+  .InFrame1_1Regis1 {
+    padding-bottom: 17vh;
+  }
+  .from input {
+    width: 60vw;
+  }
+}
+@media only screen and (max-width: 393px) {
+  .InFrameRegis1 {
+    display: contents;
+    padding: 0px;
+  }
+  .InFrame1_2Regis1 {
+    width: 100vw;
+    height: 60vh;
+    left: 0px;
+  }
+  .InFrame1_1Regis1 {
+    width: 100vw;
+    background-color: #b9b9b9;
+    height: 40vh;
+    text-align: -webkit-center;
+  }
+  .TextInFrame1_1Regis1 {
+    margin: 0px;
+    padding: 0px;
+  }
+  .TextInFrame1_1_2Regis1 {
+    width: 50vw;
+    margin: 0px;
+    margin-left: 30px;
+  }
+  .from input {
+    height: 10vw;
+    width: 80vw;
+  }
+  .INBoxRegister2 button {
+    width: 35vw;
+    height: 10vw;
+    font-size: 20px;
+  }
+}

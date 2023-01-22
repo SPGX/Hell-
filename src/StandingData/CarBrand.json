@@ -1,0 +1,30 @@
+{
+    "Brand":[
+    {"id": "1","Value": "Audi"},
+    {"id": "2","Value": "Bentley"},
+    {"id": "3","Value": "BMW"},
+    {"id": "4","Value": "Chevrolet"},
+    {"id": "5","Value": "Ford"},
+    {"id": "6","Value": "Ferrari"},
+    {"id": "7","Value": "Honda"},
+    {"id": "8","Value": "Hyundai"},
+    {"id": "9","Value": "Isuzu"},
+    {"id": "10","Value": "Jeep"},
+    {"id": "11","Value": "Jaguar"},
+    {"id": "12","Value": "Kia"},
+    {"id": "13","Value": "Lamborghini"},
+    {"id": "14","Value": "Land Rover"},
+    {"id": "15","Value": "Lexus"},
+    {"id": "16","Value": "Mazda"},
+    {"id": "17","Value": "Mercedes Benz"},
+    {"id": "18","Value": "MG"},
+    {"id": "19","Value": "Mini"},
+    {"id": "20","Value": "Mitsubishi"},
+    {"id": "21","Value": "Nissan"},
+    {"id": "22","Value": "Peugeot"},
+    {"id": "23","Value": "Porsche"},
+    {"id": "24","Value": "Rolls-Royce"},
+    {"id": "25","Value": "Seat"},
+    {"id": "26","Value": "Ssangyong"}
+    ]
+}

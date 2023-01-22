@@ -1,0 +1,78 @@
+.AddAssignLeacyFame2 {
+  text-align: left;
+  border-bottom: 1px solid #cccc;
+  width: 98%;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+.iconAddAssignLeacyame2_1 {
+  background: url("../../img/iconAddAssignLeacyame1.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 70px;
+  height: 50px;
+}
+.iconAddAssignLeacyame2_2 {
+  background: url("../../img/iconAddAssignLeacy3.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 70px;
+  height: 50px;
+}
+
+.textboxAddAssignLeacyFame2_2 {
+  margin-left: -10px;
+}
+.boxAddAssignLeacyFame2_1 {
+  background: #ffffff;
+  box-shadow: 0px 0px 6px 4px rgb(202 202 202 / 25%);
+  margin: 10px;
+  border: 1px solid #cccc;
+  border-radius: 12px;
+  width: 19vw;
+  padding: 20px;
+  margin-left: 0px;
+}
+.InboxAddAssignLeacyFame2_1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  border-bottom: 1px solid #cccc;
+  justify-content: start;
+}
+.InboxAddAssignLeacyFame2_2 {
+  border-bottom: 1px solid #cccc;
+  margin-bottom: 20px;
+}
+.labelformAddAssignLeacy2 {
+  font-family: "Kanit";
+  font-style: normal;
+  color: #828282;
+  font-size: 14px;
+  margin-bottom: 5px;
+  text-align: left;
+  margin-top: 10px;
+}
+.labelformAddAssignLeacy2_1 {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  margin-right: 2px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+.buttonAddAssignLeacy {
+  background: #ffffff;
+  border: 1px solid #0f1b50;
+  box-shadow: 0px 0px 4px rgb(248 213 134 / 30%);
+  border-radius: 12px;
+  width: 100%;
+  height: 30px;
+  color: #0f1b50;
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+}

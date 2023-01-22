@@ -1,0 +1,30 @@
+{
+    "BrandName":[
+        {"id": "1","Value": "adidas"},
+        {"id": "2","Value": "Armani"},
+        {"id": "3","Value": "ASICS"},
+        {"id": "4","Value": "Aston Martin"},
+        {"id": "5","Value": "Bata"},
+        {"id": "6","Value": "Bentley"},
+        {"id": "7","Value": "Bobbi Brown"},
+        {"id": "8","Value": "Bottega Veneta"},
+        {"id": "9","Value": "Bulgari"},
+        {"id": "10","Value": "Burberry"},
+        {"id": "11","Value": "Canon"},
+        {"id": "12","Value": "Cartier"},
+        {"id": "13","Value": "Céline"},
+        {"id": "14","Value": "Chanel"},
+        {"id": "15","Value": "Clarins"},
+        {"id": "16","Value": "Cle de Peau Beaute"},
+        {"id": "17","Value": "COACH"},
+        {"id": "18","Value": "Dior"},
+        {"id": "19","Value": "Dolce & Gabbana"},
+        {"id": "20","Value": "Estée Lauder"},
+        {"id": "21","Value": "Ferrari"},
+        {"id": "22","Value": "Fila"},
+        {"id": "23","Value": "Fujifilm"},
+        {"id": "24","Value": "Givenchy"},
+        {"id": "25","Value": "GUCCI"},
+        {"id": "26","Value": "Guerlain"}
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "CryptoCurrency":[
+        {"id": "1","Value": "BUSD"},
+        {"id": "2","Value": "USDT"},
+        {"id": "3","Value": "USDC"},
+        {"id": "4","Value": "BTC"},
+        {"id": "5","Value": "ALGO"},
+        {"id": "6","Value": "AVAX"},
+        {"id": "7","Value": "BNB"},
+        {"id": "8","Value": "BCH"},
+        {"id": "9","Value": "KUB"},
+        {"id": "10","Value": "ADA"},
+        {"id": "11","Value": "LINK"},
+        {"id": "12","Value": "DAI"},
+        {"id": "13","Value": "MANA"},
+        {"id": "14","Value": "DOGE"},
+        {"id": "15","Value": "ETH"},
+        {"id": "16","Value": "FLOW"},
+        {"id": "17","Value": "JFIN"},
+        {"id": "18","Value": "LTC"},
+        {"id": "19","Value": "ROSE"},
+        {"id": "20","Value": "DOT"},
+        {"id": "21","Value": "MATIC"},
+        {"id": "22","Value": "XRP"},
+        {"id": "23","Value": "SAND"},
+        {"id": "24","Value": "SOL"},
+        {"id": "25","Value": "SIX"},
+        {"id": "26","Value": "XLM"}
+    ]
+}

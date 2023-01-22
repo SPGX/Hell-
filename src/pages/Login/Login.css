@@ -1,0 +1,17 @@
+.textlogin {
+  text-align: end;
+  margin-top: -15px;
+  color: #c68900;
+  text-decoration: underline #c68900;
+}
+.BoxLogin {
+  text-align: left;
+  display: inline-block;
+}
+.BoxLogin2 {
+  margin-top: 70px;
+}
+.Textp {
+  color: #c68900;
+  text-decoration: underline #c68900;
+}

@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "alrightsco",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "/Users/mac/Desktop/alRIGHTs/alrights/amplifyapp/amplify/backend/api/alrightsco/schema.graphql",
+    "defaultAuthType": {
+      "mode": "AMAZON_COGNITO_USER_POOLS",
+      "cognitoUserPoolId": "authalrightsco"
+    },
+    "additionalAuthTypes": [
+      {
+        "mode": "API_KEY",
+        "expirationTime": 365,
+        "apiKeyExpirationDate": "2023-10-24T19:39:30.443Z",
+        "keyDescription": "alightAPI"
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+    "ReceiverType":[
+        {"id": "1","Category": "บุคคลในครอบครัว","RoleType": "คู่สมรส","Role": "คู่สมรสจดทะเบียน","Icon": "spouse1.png"},
+        {"id": "2","Category": "บุคคลในครอบครัว","RoleType": "คู่สมรส","Role": "คู่สมรสไม่จดทะเบียน(นอกสมรส)","Icon": "spouse2.png"},
+        {"id": "3","Category": "บุคคลในครอบครัว","RoleType": "บุตร","Role": "ลูกที่เกิดในสมรส","Icon": "child1.png"},
+        {"id": "4","Category": "บุคคลในครอบครัว","RoleType": "บุตร","Role": "ลูกที่เกิดนอกสมรส","Icon": "child2.png"},
+        {"id": "5","Category": "บุคคลในครอบครัว","RoleType": "บุตร","Role": "ลูกบุญธรรม","Icon": "child3.png"},
+        {"id": "6","Category": "บุคคลในครอบครัว","RoleType": "บุตร","Role": "ลูกที่มีการรับรองบุตรในภายหลัง","Icon": "child4.png"},
+        {"id": "7","Category": "บุคคลในครอบครัว","RoleType": "บิดามารดา","Role": "บิดาที่สืบสายเลือดโดยตรง","Icon": "father1.png"},
+        {"id": "8","Category": "บุคคลในครอบครัว","RoleType": "บิดามารดา","Role": "มารดาที่สืบสายเลือดโดยตรง","Icon": "mother1.png"},
+        {"id": "9","Category": "บุคคลในครอบครัว","RoleType": "บิดามารดา","Role": "พ่อเลี้ยง","Icon": "father2.png"},
+        {"id": "10","Category": "บุคคลในครอบครัว","RoleType": "บิดามารดา","Role": "แม่เลี้ยง","Icon": "mother2.png"},
+        {"id": "11","Category": "บุคคลในครอบครัว","RoleType": "พี่น้อง","Role": "พี่น้องพ่อแม่เดียวกัน","Icon": "sibling1.png"},
+        {"id": "12","Category": "บุคคลในครอบครัว","RoleType": "พี่น้อง","Role": "พี่น้องคนละแม่","Icon": "sibling2.png"},
+        {"id": "13","Category": "บุคคลในครอบครัว","RoleType": "พี่น้อง","Role": "พี่น้องคนละพ่อ","Icon": "sibling3.png"},
+        {"id": "14","Category": "บุคคลในครอบครัว","RoleType": "ญาติ","Role": "ปู่","Icon": "grandfather1.png"},
+        {"id": "15","Category": "บุคคลในครอบครัว","RoleType": "ญาติ","Role": "ย่า","Icon": "grandmother1.png"},
+        {"id": "16","Category": "บุคคลในครอบครัว","RoleType": "ญาติ","Role": "ตา","Icon": "grandfather2.png"},
+        {"id": "17","Category": "บุคคลในครอบครัว","RoleType": "ญาติ","Role": "ย่าย","Icon": "grandmother2.png"},
+        {"id": "18","Category": "บุคคลในครอบครัว","RoleType": "ญาติ","Role": "ทวด","Icon": "great-grandparent.png"},
+        {"id": "19","Category": "บุคคลในครอบครัว","RoleType": "ญาติ","Role": "ลุง","Icon": "uncle.png"},
+        {"id": "20","Category": "บุคคลในครอบครัว","RoleType": "ญาติ","Role": "ป้า","Icon": "aunt.png"},
+        {"id": "21","Category": "บุคคลในครอบครัว","RoleType": "ญาติ","Role": "น้า","Icon": "SiblingOfMother.png"},
+        {"id": "22","Category": "บุคคลในครอบครัว","RoleType": "ญาติ","Role": "อา","Icon": "SiblingOfFather.png"},
+        {"id": "23","Category": "บุคคลในครอบครัว","RoleType": "ญาติ","Role": "ลูกพี่ลูกน้อง","Icon": "sibling4.png"},
+        {"id": "24","Category": "บุคคลอื่นๆที่ไม่ใช่ในครอบครัว","RoleType": "บุคคลที่ไม่ใช่ครอบครัว","Role": "เพื่อน/คนรู้จัก","Icon": "friend.png"},
+        {"id": "25","Category": "บุคคลอื่นๆที่ไม่ใช่ในครอบครัว","RoleType": "บุคคลที่ไม่ใช่ครอบครัว","Role": "หุ้นส่วนทางธุรกิจ","Icon": "partner.png"},
+        {"id": "26","Category": "หน่วยงานองค์การกุศล","RoleType": "บุคคลที่ไม่ใช่ครอบครัว","Role": "หน่วยงานองค์การกุศล","Icon": "charity.png"}
+    ]
+}

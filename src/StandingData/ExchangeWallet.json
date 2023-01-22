@@ -1,0 +1,14 @@
+{
+    "ExchangeWallet":[
+        {"id": "1","Value": "Binanace"},
+        {"id": "2","Value": "Bitkub"},
+        {"id": "3","Value": "Bitazza"},
+        {"id": "4","Value": "Satang Pro"},
+        {"id": "5","Value": "Coinbase"},
+        {"id": "6","Value": "Metamask"},
+        {"id": "7","Value": "Ledger"},
+        {"id": "8","Value": "Trezor"},
+        {"id": "9","Value": "UKISS"},
+        {"id": "10","Value": "อื่นๆ"}
+    ]
+}

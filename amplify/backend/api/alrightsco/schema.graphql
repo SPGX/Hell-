@@ -1,0 +1,832 @@
+# This "input" configures a global authorization rule to enable public access to
+# all models in this schema. Learn more about authorization rules here: https://docs.amplify.aws/cli/graphql/authorization-rules
+# input AMPLIFY { globalAuthRule: AuthRule = { allow: public } } # FOR TESTING ONLY!
+# Table name should not have underscroll character (e.g. _)
+
+type Note @model
+          @auth(rules: [
+            { allow: owner, ownerField: "owner", identityClaim: "sub" },
+            { allow: groups, groups: ["Admin"], operations: [read, update] },
+            { allow: groups, groups: ["Lawyer"], operations: [read] }
+          ]) {
+  id: ID!
+  name: String!
+  description: String
+  image: String
+  owner: String
+}
+
+type HomeCookies @model 
+          @auth(rules: [
+            { allow: public, operations: [create]},
+            { allow: groups, groups: ["Admin"], operations: [create,read,update,delete] }
+            ]) {
+id: ID!
+UID: String!
+CookieAccept: Int
+isMobile: String
+deviceType: String
+mobileVendor: String
+mobileModel: String
+osName: String
+osVersion: String
+browserName: String
+fullBrowserVersion: String
+}
+
+
+# C_Dashboard
+type Dashboard @model 
+          @auth(rules: [
+            { allow: owner, ownerField: "owner", identityClaim: "sub" },
+            { allow: groups, groups: ["Admin"], operations: [read, update, delete] },
+            { allow: groups, groups: ["Lawyer"], operations: [read] }
+          ]) {
+id: ID!
+owner: String
+Email: String!
+Personal: Float
+PersonalLastDate: String
+Assets: Float
+AssetsLastDate: String
+Pet: Float
+PetLastDate: String
+Funeral: Float
+FuneralLastDate: String
+WillManagement: Float
+WillManageLastDate: String
+WillManager: Float
+WillManagerLastDate: String
+PDFQuota: Int
+PDFLastDate: String
+WillFile: String
+ReceiversLastDate: String
+LastMessageDate: String
+PersonalDocs: Int
+AssetDocs: Int
+ReceiverDocs: Int
+WillManagerDocs: Int
+WitnessDocs: Int
+InsuranceDocs: Int
+PetDocs: Int
+OtherDocs: Int
+Insurance: Float
+}
+
+# D1_Personal_Info
+type Person @model 
+          @auth(rules: [
+            { allow: owner, ownerField: "owner", identityClaim: "sub" },
+            { allow: groups, groups: ["Admin"], operations: [create,read,update,delete] },
+            { allow: groups, groups: ["Lawyer"], operations: [read] }
+            ]) {
+id: ID!
+owner: String
+Title: String
+Fname: String
+Lname: String
+CitizenID: String
+BirthDate: String
+Sex: String
+Email: String!
+PhoneCode: String @default(value: "+66")
+PhoneNumber: String
+Address1: String
+Address2: String
+Address3: String
+Address4: String
+PostCode: String
+AssetClass: String
+MaritalStatus: String
+HasChild: String
+MarTitle: String
+MarFname: String
+MarLname: String
+MarBirthDate: String
+MarSex: String
+MarEmail: String
+MarPhoneCode: String @default(value: "+66")
+MarPhoneNumber: String
+MarAddress1: String
+MarAddress2: String
+MarAddress3: String
+MarAddress4: String
+MarPostCode: String
+MarAccountActive: String
+}
+
+# D2_OrderInfo
+type OrderInfo @model 
+          @auth(rules: [
+            { allow: owner, ownerField: "owner", identityClaim: "sub" },
+            { allow: groups, groups: ["Admin"], operations: [create,read,update,delete] },
+            { allow: groups, groups: ["Lawyer"], operations: [read] }
+          ]) {
+id: ID!
+owner: String
+OrderType: String
+Topic: String
+Text: String
+Note: String
+AttachedFile: String
+SendType: Int
+SendDate: String
+}
+
+# D3_Document_Info
+type DocsDashboard @model 
+          @auth(rules: [
+            { allow: owner, ownerField: "owner", identityClaim: "sub" },
+            { allow: groups, groups: ["Admin"], operations: [create,read,update,delete] },
+            { allow: groups, groups: ["Lawyer"], operations: [read] }
+          ]) {
+id: ID!
+owner: String
+PersonalDocs: Float
+AssetDocs: Float
+ReceiverDocs: Float
+WealtManagerDocs: Float
+ProvisionDocs: Float
+InsuranceDocs: Float
+PetDocs: Float
+OtherDocs: Float
+}
+
+# D3_PersonalDocs
+type PersonalDocs @model 
+          @auth(rules: [
+            { allow: owner, ownerField: "owner", identityClaim: "sub" },
+            { allow: groups, groups: ["Admin"], operations: [create,read,update,delete] },
+            { allow: groups, groups: ["Lawyer"], operations: [read] }
+          ]) {
+id: ID!
+owner: String
+CitizenCard: String
+CensusReg: String
+NameChange: String
+MarriageCert: String
+DivorceCert: String
+}
+
+# D3_WitnessDocs
+type WitnessDocs @model 
+          @auth(rules: [
+            { allow: owner, ownerField: "owner", identityClaim: "sub" },
+            { allow: groups, groups: ["Admin"], operations: [create,read,update,delete] },
+            { allow: groups, groups: ["Lawyer"], operations: [read] }
+          ]) {
+id: ID!
+owner: String
+CitizenCard: String
+}
+
+# D3_AssetDocs
+type AssetDocs @model 
+          @auth(rules: [
+            { allow: owner, ownerField: "owner", identityClaim: "sub" },
+            { allow: groups, groups: ["Admin"], operations: [create,read,update,delete] },
+            { allow: groups, groups: ["Lawyer"], operations: [read] }
+          ]) {
+id: ID!
+owner: String
+DocType: String
+DocName: String
+}
+
+# D3_InsuranceDocs
+type InsuranceDocs @model 
+          @auth(rules: [
+            { allow: owner, ownerField: "owner", identityClaim: "sub" },
+            { allow: groups, groups: ["Admin"], operations: [create,read,update,delete] },
+            { allow: groups, groups: ["Lawyer"], operations: [read] }
+          ]) {
+id: ID!
+owner: String
+InsuranceDocs: String
+}
+
+# D3_ReceiverDocs
+type ReceiverDocs @model 
+          @auth(rules: [
+            { allow: owner, ownerField: "owner", identityClaim: "sub" },
+            { allow: groups, groups: ["Admin"], operations: [create,read,update,delete] },
+            { allow: groups, groups: ["Lawyer"], operations: [read] }
+          ]) {
+id: ID!
+owner: String
+BornRegDoc: String
+ChildCitizenCard: String
+MarriedRegDoc: String
+MarriedCitizenCard: String
+GenralCitizenCard: String
+OwnerContractDoc: String
+}
+
+# D3_PetDocs
+type PetDocs @model 
+          @auth(rules: [
+            { allow: owner, ownerField: "owner", identityClaim: "sub" },
+            { allow: groups, groups: ["Admin"], operations: [create,read,update,delete] },
+            { allow: groups, groups: ["Lawyer"], operations: [read] }
+          ]) {
+id: ID!
+owner: String
+PetRegDoc: String
+PetImage: String
+}
+
+# D3_WealtManagerDocs
+type WealtManagerDocs @model 
+          @auth(rules: [
+            { allow: owner, ownerField: "owner", identityClaim: "sub" },
+            { allow: groups, groups: ["Admin"], operations: [create,read,update,delete] },
+            { allow: groups, groups: ["Lawyer"], operations: [read] }
+          ]) {
+id: ID!
+owner: String
+WealtManagerDocs: String
+}
+
+# D3_OtherDocs
+type OtherDocs @model 
+          @auth(rules: [
+            { allow: owner, ownerField: "owner", identityClaim: "sub" },
+            { allow: groups, groups: ["Admin"], operations: [create,read,update,delete] },
+            { allow: groups, groups: ["Lawyer"], operations: [read] }
+          ]) {
+id: ID!
+owner: String
+Docs: String
+}
+
+# D4_Insurance_Info
+type InsuranceInfo @model 
+          @auth(rules: [
+            { allow: owner, ownerField: "owner", identityClaim: "sub" },
+            { allow: groups, groups: ["Admin"], operations: [create,read,update,delete] },
+            { allow: groups, groups: ["Lawyer"], operations: [read] }
+          ]) {
+id: ID!
+owner: String
+InsuranceType: String
+InsuranceFirm: String
+InsuranceID: String
+AgentName: String
+MoreInfo: String
+}
+
+# D5.2.1_Instruction
+type AssetInstructions @model 
+          @auth(rules: [
+            { allow: owner, ownerField: "owner", identityClaim: "sub" },
+            { allow: groups, groups: ["Admin"], operations: [create,read,update,delete] },
+            { allow: groups, groups: ["Lawyer"], operations: [read] }
+          ]) {
+id: ID!
+owner: String
+MarriageFlag: Int
+AssetName: String
+AssetCategory: String
+OwnerType: String
+BankName: String
+TitleDeedNumber: String
+Rai: Float
+Ngan: Float
+SquareSize: Float
+SquareUnit: String
+AssetDetail: String
+AssetValue: Float
+GGLatitude: Float
+GGLongtitude: Float
+Address: String
+Province: String
+SubProvince: String
+Tumbol: String
+PostCode: String
+AssetComment: String
+image1: String
+image2: String
+image3: String
+image4: String
+image5: String
+image6: String
+}
+
+# D5.2.2_Land
+type AssetLand @model 
+          @auth(rules: [
+            { allow: owner, ownerField: "owner", identityClaim: "sub" },
+            { allow: groups, groups: ["Admin"], operations: [create,read,update,delete] },
+            { allow: groups, groups: ["Lawyer"], operations: [read] }
+          ]) {
+id: ID!
+owner: String
+MarriageFlag: Int
+AssetName: String
+AssetCategory: String
+OwnerType: String
+BankName: String
+TitleDeedNumber: String
+Rai: Float
+Ngan: Float
+SquareSize: Float
+SquareUnit: String
+AssetDetail: String
+AssetValue: Float
+GGLatitude: Float
+GGLongtitude: Float
+Address: String
+Province: String
+SubProvince: String
+Tumbol: String
+PostCode: String
+AssetComment: String
+image1: String
+image2: String
+image3: String
+image4: String
+image5: String
+image6: String
+}
+
+# D5.2.3_Vehicles
+type AssetVehicles @model 
+          @auth(rules: [
+            { allow: owner, ownerField: "owner", identityClaim: "sub" },
+            { allow: groups, groups: ["Admin"], operations: [create,read,update,delete] },
+            { allow: groups, groups: ["Lawyer"], operations: [read] }
+          ]) {
+id: ID!
+owner: String
+MarriageFlag: Int
+AssetCategory: String
+OwnerType: String
+BankName: String
+Brand: String
+ModelYear: String
+Model: String
+ProvinceReg: String
+VehicleNumber: String
+Detail: String
+AssetValue: Float
+AssetAddress: String
+AdssetComment: String
+image1: String
+image2: String
+image3: String
+image4: String
+image5: String
+image6: String
+}
+
+# D5.2.4_BankAccounts
+type AssetBankAccounts @model 
+          @auth(rules: [
+            { allow: owner, ownerField: "owner", identityClaim: "sub" },
+            { allow: groups, groups: ["Admin"], operations: [create,read,update,delete] },
+            { allow: groups, groups: ["Lawyer"], operations: [read] }
+          ]) {
+id: ID!
+owner: String
+MarriageFlag: Int
+AccountName: String
+AccountNumber: String
+BankName: String
+BankBranchs: String
+AccountType: String
+AssetValue: Float
+Detail: String
+image1: String
+image2: String
+image3: String
+image4: String
+}
+
+# D5.2.5_LuxuryGoods
+type AssetLuxuryGoods @model 
+          @auth(rules: [
+            { allow: owner, ownerField: "owner", identityClaim: "sub" },
+            { allow: groups, groups: ["Admin"], operations: [create,read,update,delete] },
+            { allow: groups, groups: ["Lawyer"], operations: [read] }
+          ]) {
+id: ID!
+owner: String
+MarriageFlag: Int
+AssetCategory: String
+BrandName: String
+Model: String
+GoodsNumber: String
+AssetValue: Float
+AssetAddress: String
+AssetComment: String
+image1: String
+image2: String
+image3: String
+image4: String
+image5: String
+image6: String
+}
+
+# D5.2.6_ArtWorks
+type AssetArtWorks @model 
+          @auth(rules: [
+            { allow: owner, ownerField: "owner", identityClaim: "sub" },
+            { allow: groups, groups: ["Admin"], operations: [create,read,update,delete] },
+            { allow: groups, groups: ["Lawyer"], operations: [read] }
+          ]) {
+id: ID!
+owner: String
+MarriageFlag: Int
+AssetName: String
+AssetCategory: String
+Artist: String
+GoodsNumber: String
+AssetValue: Float
+AssetAddress: String
+AssetComment: String
+image1: String
+image2: String
+image3: String
+image4: String
+image5: String
+image6: String
+}
+
+# D5.2.7_NFT
+type AssetNFT @model 
+          @auth(rules: [
+            { allow: owner, ownerField: "owner", identityClaim: "sub" },
+            { allow: groups, groups: ["Admin"], operations: [create,read,update,delete] },
+            { allow: groups, groups: ["Lawyer"], operations: [read] }
+          ]) {
+id: ID!
+owner: String
+MarriageFlag: Int
+AssetName: String
+AssetCategory: String
+URL: String
+Blockchain: String
+AssetValue: Float
+AssetComment: String
+image1: String
+image2: String
+image3: String
+image4: String
+image5: String
+image6: String
+}
+
+# D5.2.8_Gold
+type AssetGold @model 
+          @auth(rules: [
+            { allow: owner, ownerField: "owner", identityClaim: "sub" },
+            { allow: groups, groups: ["Admin"], operations: [create,read,update,delete] },
+            { allow: groups, groups: ["Lawyer"], operations: [read] }
+          ]) {
+id: ID!
+owner: String
+MarriageFlag: Int
+AssetName: String
+AssetCategory: String
+Weight: Float
+WeightUnit: String
+MarketPrice: Float
+AssetValue: Float
+AssetAddress: String
+AssetComment: String
+image1: String
+image2: String
+image3: String
+image4: String
+}
+
+# D5.2.9_CryptoCurrency
+type AssetCryptoCurrency @model 
+          @auth(rules: [
+            { allow: owner, ownerField: "owner", identityClaim: "sub" },
+            { allow: groups, groups: ["Admin"], operations: [create,read,update,delete] },
+            { allow: groups, groups: ["Lawyer"], operations: [read] }
+          ]) {
+id: ID!
+owner: String
+MarriageFlag: Int
+AssetName: String
+Currency: String
+ExchangeWallet: String
+AssetValue: Float
+AssetComment: String
+image1: String
+image2: String
+image3: String
+image4: String
+}
+
+# D5.2.10_Stock
+type AssetStock @model 
+          @auth(rules: [
+            { allow: owner, ownerField: "owner", identityClaim: "sub" },
+            { allow: groups, groups: ["Admin"], operations: [create,read,update,delete] },
+            { allow: groups, groups: ["Lawyer"], operations: [read] }
+          ]) {
+id: ID!
+owner: String
+MarriageFlag: Int
+AssetName: String
+AssetCategory: String
+StockUnit: Float
+StockPrice: Float
+PurchaseDate: String
+AssetValue: Float
+AssetComment: String
+image1: String
+image2: String
+image3: String
+image4: String
+}
+
+# D5.2.11_Loan
+type AssetLoanPromise @model 
+          @auth(rules: [
+            { allow: owner, ownerField: "owner", identityClaim: "sub" },
+            { allow: groups, groups: ["Admin"], operations: [create,read,update,delete] },
+            { allow: groups, groups: ["Lawyer"], operations: [read] }
+          ]) {
+id: ID!
+owner: String
+MarriageFlag: Int
+AssetName: String
+AssetCategory: String
+AssetValue: Float
+YieldPercentage: Float
+YieldType: String
+PromiseStartDate: String
+AssetComment: String
+image1: String
+image2: String
+image3: String
+image4: String
+}
+
+# D5.2.12_Cash
+type AssetCashSaving @model 
+          @auth(rules: [
+            { allow: owner, ownerField: "owner", identityClaim: "sub" },
+            { allow: groups, groups: ["Admin"], operations: [create,read,update,delete] },
+            { allow: groups, groups: ["Lawyer"], operations: [read] }
+          ]) {
+id: ID!
+owner: String
+MarriageFlag: Int
+AssetName: String
+AssetValue: Float
+AssetComment: String
+image1: String
+image2: String
+image3: String
+image4: String
+}
+
+# D5_Pets_Info
+type Pet @model 
+          @auth(rules: [
+            { allow: owner, ownerField: "owner", identityClaim: "sub" },
+            { allow: groups, groups: ["Admin"], operations: [create,read,update,delete] },
+            { allow: groups, groups: ["Lawyer"], operations: [read] }
+          ]) {
+id: ID!
+owner: String
+Active: String
+ReceiverID: ID
+PetName: String
+PetType: String
+PetSpecies: String
+PetFavoriteFeed: String
+PetMedicalCondition: String
+PetLastMessage: String
+PetCharacter: String
+PetDoctor: String
+Budget: Float
+BudgetSource: String
+PetWhenToSendType: String
+PetSendSchedule: String
+PetImage1: String
+PetImage2: String
+PetImage3: String
+PetImage4: String
+PetImage5: String
+PetImage6: String
+PetImage7: String
+PetImage8: String
+PetImage9: String
+PetImage10: String
+}
+
+# D6_Funeral_Info
+type Funeral @model 
+          @auth(rules: [
+            { allow: owner, ownerField: "owner", identityClaim: "sub" },
+            { allow: groups, groups: ["Admin"], operations: [create,read,update,delete] },
+            { allow: groups, groups: ["Lawyer"], operations: [read] }
+          ]) {
+id: ID!
+owner: String
+ManagerID1: ID
+ManagerID2: ID
+ManagerID3: ID
+ManagerID4: ID
+ManagerID5: ID
+Religion: String
+FuneralPlace: String
+Duration: String
+PartyFood: String
+Flower: String
+FuneralCulture: String
+FuneralProcessType: String
+WhereToKeep: String
+MoreDetail: String
+Budget: Float
+BudgetSource: String
+image1: String
+image2: String
+image3: String
+image4: String
+}
+
+# D7_AssignLegacy
+type AssignLegacy @model 
+          @auth(rules: [
+            { allow: owner, ownerField: "owner", identityClaim: "sub" },
+            { allow: groups, groups: ["Admin"], operations: [create,read,update,delete]}
+          ]) {
+id: ID!
+owner: String
+Assetid: ID!
+Receiverid: ID!
+Sequence: Int
+Percentage: Float
+}
+
+# D8_Receiver
+type Receiver @model 
+          @auth(rules: [
+            { allow: owner, ownerField: "owner", identityClaim: "sub" },
+            { allow: groups, groups: ["Admin"], operations: [create,read,update,delete] },
+            { allow: groups, groups: ["Lawyer"], operations: [read] }
+          ]) {
+id: ID!
+owner: String
+Title: String
+Fname: String
+Lname: String
+Sex: String
+Category: String
+RoleType: String
+Role: String
+Email: String
+PhoneCode: String @default(value: "+66")
+PhoneNumber: String
+AccountActive: String
+}
+
+type Charity @model 
+          @auth(rules: [
+            { allow: owner, ownerField: "owner", identityClaim: "sub" },
+            { allow: groups, groups: ["Admin"], operations: [read, update] }
+          ]) {
+id: ID!
+owner: String
+CharityName: String
+Address: String
+Province: String
+District: String
+Tambon: String
+PostCode: String
+Email: String
+PhoneCode: String @default(value: "+66")
+PhoneNumber: String
+}
+
+# D9_LegacyManager
+type LegacyManager @model 
+          @auth(rules: [
+            { allow: owner, ownerField: "owner", identityClaim: "sub" },
+            { allow: groups, groups: ["Admin"], operations: [create,read,update,delete] },
+            { allow: groups, groups: ["Lawyer"], operations: [read] }
+          ]) {
+id: ID!
+owner: String
+ManagerType: Int
+Title: String
+Fname: String
+Lname: String
+Role: String
+Email: String
+PhoneCode: String @default(value: "+66")
+PhoneNumber: String
+AccountActive: String
+}
+
+# E_Payment
+type Payment @model 
+          @auth(rules: [
+            { allow: owner, ownerField: "owner", identityClaim: "sub" },
+            { allow: groups, groups: ["Admin"], operations: [create,read,update,delete] }
+          ]) {
+id: ID!
+owner: String
+PaymentMethod: String
+BillFname: String
+BillLname: String
+BillEmail: String
+BillPhoneCode: String @default(value: "+66")
+BillPhoneNumber: String
+BillAddress: String
+BillProvince: String
+BillDistrict: String
+BillTambon: String
+BillPostCode: String
+TotalPrice: String
+VoucherCode: String
+RefNo: String
+}
+
+# H_Profile
+type Profile @model 
+          @auth(rules: [
+            { allow: owner, ownerField: "owner", identityClaim: "sub" },
+            { allow: groups, groups: ["Admin"], operations: [create,read,update,delete] },
+            { allow: groups, groups: ["Lawyer"], operations: [read] }
+          ]) {
+id: ID!
+owner: String
+CookieAccept: Boolean
+AccountLevel: Int @default(value: "0")
+ProfileImg: String
+Fname: String
+Lname: Int
+PhoneCode: String @default(value: "+66")
+PhoneNumber: String
+SubscribtionPlan: String
+SubscriptionDate: String
+SubExpireDate: String
+NotificationNews: Boolean
+NotificationFeature: Boolean
+PersonalPrivacy: Boolean
+WebPrivacy: Boolean
+}
+
+type UserInbox @model 
+          @auth(rules: [
+            { allow: owner, ownerField: "owner", identityClaim: "sub" },
+            { allow: groups, groups: ["Admin"], operations: [create,read,update,delete] }
+          ]) {
+id: ID!
+owner: String
+TopicType: String
+Topic: String
+Detail: String
+Email: String
+PhoneCode: String @default(value: "+66")
+PhoneNumber: String
+Status: Int
+AdminComment: String
+}
+
+# I_Booking
+type Booking @model 
+          @auth(rules: [
+            { allow: owner, ownerField: "owner", identityClaim: "sub" },
+            { allow: groups, groups: ["Admin"], operations: [create,read,update,delete] },
+            { allow: groups, groups: ["Lawyer"], operations: [read] }
+          ]) {
+id: ID!
+owner: String
+BookingDate: String
+TimeDuration: String
+TopicType: String
+Topic: String
+Detail: String
+Status: Int
+AdminComment: String
+}
+
+# Dxx_Provision
+type Provision @model 
+          @auth(rules: [
+            { allow: owner, ownerField: "owner", identityClaim: "sub" },
+            { allow: groups, groups: ["Admin"], operations: [create,read,update,delete] },
+            { allow: groups, groups: ["Lawyer"], operations: [read] }
+          ]) {
+id: ID!
+owner: String
+FName1: String
+LName1: String
+Email1: String
+PhoneCode1: String @default(value: "+66")
+PhoneNumber1: String
+FName2: String
+LName2: String
+Email2: String
+PhoneCode2: String
+PhoneNumber2: String @default(value: "+66")
+}

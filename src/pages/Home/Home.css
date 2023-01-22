@@ -1,0 +1,1668 @@
+p {
+  margin: 0;
+}
+.alice-carousel {
+  position: relative;
+  width: 100%;
+  margin: 0px;
+  direction: ltr;
+}
+.alice-carousel__dots {
+  margin: 0px 3px 5px;
+  padding: 0;
+}
+.Home {
+  background: #f9f9f9;
+  margin-top: 5px;
+  padding: 0px 15% 0px 15%;
+  height: 100vh;
+}
+.Frame1 {
+  display: flex;
+  justify-content: space-between;
+  height: 40vw;
+}
+.InFrame1 {
+  display: flex;
+  justify-content: flex-start;
+  height: 40vw;
+  width: 100%;
+}
+.InFrame1 button {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  background-color: #c68900;
+  box-shadow: 0px 6px 6px rgba(248, 213, 134, 0.3);
+  border-radius: 12px;
+  border: transparent;
+  padding: 5px;
+  width: 80%;
+}
+.InFrame1_1 {
+  width: 25%;
+  position: fixed;
+  margin-top: 120px;
+  margin-left: 20px;
+}
+.BoxText1 {
+  background: url("../../img/iconHome1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.TextInFrame1_1 {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  text-align: center;
+  color: #c68900;
+}
+.TextInFrame1_2 {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  text-align: center;
+  color: #c68900;
+  padding: 8px;
+}
+.TextInFrame1_1_2 {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: #000000;
+  margin: 15px;
+  margin-left: 0px;
+  width: 100%;
+}
+.InFrame1_2 {
+  background: url("../../img/BGHome1_1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  /* height: 50vw; */
+  display: flex;
+  justify-content: space-between;
+  /* padding: 30px 100px 0px 100px; */
+  background-color: #fff;
+  /* position: relative;
+  left: 7vw; */
+}
+.InFrame1_3 {
+  background: url("../../img/BGHome1_2.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  /* height: 50vw; */
+  display: flex;
+  justify-content: space-between;
+  /* padding: 30px 100px 0px 100px; */
+  background-color: #fff;
+  /* position: relative;
+  left: 7vw; */
+}
+.InFrame1_4 {
+  background: url("../../img/BGHome1_3.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  /* height: 50vw; */
+  display: flex;
+  justify-content: space-between;
+  /* padding: 30px 100px 0px 100px; */
+  background-color: #fff;
+  /* position: relative;
+  left: 7vw; */
+}
+.textP2 {
+  width: 500px;
+  height: 116px;
+  /* background: url("../../img/BGHome1_1.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+.BNFrame1 {
+  width: 270px;
+  height: 50px;
+  background: #c68900;
+  box-shadow: 0px 6px 6px rgba(248, 213, 134, 0.3);
+  border-radius: 7px;
+  border: transparent;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.Frame2 {
+  width: 100%;
+  background: url("../../img/BGHome2.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: -80px;
+}
+.HFrame2 {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  text-align: center;
+  color: #0f1b50;
+  opacity: 30%;
+  margin-bottom: 1vw;
+}
+.boxFrame2 {
+  position: relative;
+  top: 100px;
+  text-align: left;
+  padding: 2rem;
+}
+.InboxFrame2 {
+  display: flex;
+}
+.BGimgFrame2 {
+  padding: 7px;
+  height: 60px;
+  border-radius: 100%;
+  left: calc(50% - 120px / 2 - 596px);
+  background: linear-gradient(147.98deg, #b1c0ff 7.32%, #f8d586 93.71%);
+}
+.BGimgFrame2_2 {
+  padding: 7px;
+  height: 60px;
+  border-radius: 100%;
+  left: calc(50% - 120px / 2 - 596px);
+  background: linear-gradient(147.98deg, #b1c0ff 7.32%, #f8d586 93.71%);
+  margin-left: 10vw;
+}
+.imgFrame2 {
+  width: 65px;
+  border-radius: 100%;
+}
+.HTextFrame2 {
+  font-weight: 600;
+  font-size: 30px;
+  color: #000000;
+}
+.TextFrame2 {
+  font-family: "Kanit";
+  width: 20vw;
+  height: 13vw;
+  margin: 10px;
+  margin-bottom: 1vw;
+}
+.TextDFrame2 {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+}
+.Frame2Future {
+  background: linear-gradient(180deg, #fbbd00 0%, #fd8f01 100%);
+  border-radius: 4px;
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  width: 75px;
+  height: 22px;
+  position: absolute;
+  margin-top: -20px;
+}
+
+.Frame3 {
+  position: relative;
+  margin-top: -110px;
+  background: #fbfbfb;
+}
+.HTextFrame3 {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  text-align: center;
+  color: #0f1b50;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.InFrame3 {
+  /* display: flex; */
+  /* justify-content: flex-start; */
+  height: 40vw;
+  /* width: 100%; */
+}
+.BoxFrame3 {
+  background: url("../../img/BGKeyFeatures.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: max-content;
+}
+
+.InFrame3_1 {
+  background: url("../../img/BGHome3_1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30vw;
+  height: 25vw;
+  box-shadow: 0px 2px 6px 2px rgb(129 129 129 / 10%);
+  border-radius: 25%;
+}
+.InFrame3_2 {
+  background: url("../../img/BGHome3_2.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30vw;
+  height: 25vw;
+  box-shadow: 0px 2px 6px 2px rgb(129 129 129 / 10%);
+  border-radius: 25%;
+}
+.InFrame3_3 {
+  background: url("../../img/BGHome3_3.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30vw;
+  height: 25vw;
+  box-shadow: 0px 2px 6px 2px rgb(129 129 129 / 10%);
+  border-radius: 25%;
+}
+.InFrame3_4 {
+  background: url("../../img/BGHome3_4.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30vw;
+  height: 25vw;
+  box-shadow: 0px 2px 6px 2px rgb(129 129 129 / 10%);
+  border-radius: 25%;
+}
+.InFrame3_1_2 {
+  width: 95%;
+  display: flex;
+  background: #ffffff;
+  box-shadow: 0px -4px 4px rgb(223 223 223 / 25%),
+    0px 6px 6px rgb(211 211 211 / 25%);
+  border-radius: 12px;
+  margin-top: 40px;
+}
+.icon3_1 {
+  background: url("../../img/icon3_1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60px;
+  height: 60px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.icon3_2 {
+  background: url("../../img/icon3_2.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60px;
+  height: 60px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.icon3_3 {
+  background: url("../../img/icon3_3.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60px;
+  height: 60px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.icon3_4 {
+  background: url("../../img/icon3_4.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 60px;
+  height: 60px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.TextInFrame3_1 {
+  text-align: left;
+  width: 55%;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.Frame4 {
+  background: url("../../img/BGHome4.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: -5px;
+}
+.HFrame4 {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  color: #0f1b50;
+  padding: 40px;
+  padding-bottom: 10px;
+}
+.ProPackages {
+  display: flex;
+}
+.HFrame4_1 {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #000000;
+}
+.Packages {
+  display: flex;
+  margin: 36px;
+  margin-top: 60px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  width: 20vw;
+  height: 100vh;
+}
+.BoxFrame4 {
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgb(177 192 255 / 50%);
+  border-radius: 12px;
+  height: 560px;
+  width: 21vw;
+}
+.BoxImgFrame4 {
+  background: linear-gradient(rgb(255, 255, 255) 0 0) padding-box,
+    /*this is your grey background*/ linear-gradient(to right, #b1c0ff, #b1c0ff)
+      border-box;
+  padding: 5px;
+  border: 2px solid transparent;
+  border-radius: 100%;
+  display: inline-block;
+  position: relative;
+  top: -75px;
+}
+.BoxImgFrame4 img {
+  height: 80px;
+}
+.HBoxFrame4 {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+  color: #000000;
+  height: 40px;
+}
+.HBoxFrame4_1 {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #5b5b5b;
+  margin: 20px;
+  margin: 0px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.HBoxFrame4_2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 85px;
+  background: #dddddd;
+  border-radius: 12px;
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 25px;
+  color: #5b5b5b;
+}
+.HBoxFrame4_2In {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 111px;
+  background: #ead7ad;
+  border-radius: 12px;
+  font-family: "Kanit";
+  font-style: normal;
+  color: #5b5b5b;
+}
+.HBoxFrame4_2In2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 120px;
+  background: #e8ecff;
+  border-radius: 12px;
+  font-family: "Kanit";
+  font-style: normal;
+  color: #5b5b5b;
+}
+.HBoxFrame4_3 {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #5b5b5b;
+}
+.HBoxFrame4_4 {
+  /* margin-top: -15px; */
+  font-size: 35px;
+  font-weight: 900;
+  color: #5b5b5b;
+}
+.InBoxFrame4 {
+  display: flex;
+  /* margin: 10px 0px 10px 0px; */
+  text-align: left;
+}
+.InBoxFrame4 p {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  color: #000000;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.Check {
+  color: #b1c0ff;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.bttonFrame4 {
+  width: 90%;
+  height: 50px;
+  background: #c68900;
+  box-shadow: 0px 6px 6px rgb(248 213 134 / 30%);
+  border-radius: 12px;
+  border: none;
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  color: #ffffff;
+  margin-top: 6vw;
+}
+.bttonFrame4_2 {
+  width: 90%;
+  height: 50px;
+  background: #c68900;
+  box-shadow: 0px 6px 6px rgb(248 213 134 / 30%);
+  border-radius: 12px;
+  border: none;
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  color: #ffffff;
+  margin-top: 1vw;
+}
+.bttonFrame4_3 {
+  width: 90%;
+  height: 50px;
+  background: #c68900;
+  box-shadow: 0px 6px 6px rgb(248 213 134 / 30%);
+  border-radius: 12px;
+  border: none;
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  color: #ffffff;
+  margin-top: 11vw;
+}
+.BoxTextFrame4 {
+  position: relative;
+  top: -60px;
+}
+.ImgPackages3 {
+  width: 75px;
+}
+
+.Frame5 {
+  width: 100%;
+  background: url("../../img/BGHome5_1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: -30px;
+  height: 100vh;
+}
+.imgFrame5 {
+  height: 100vh;
+}
+.InFrame5 {
+  position: relative;
+  top: -160px;
+}
+.BoxHInFrame5 {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.HFrame5 {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  color: #0f1b50;
+  text-align: center;
+  margin-top: 100px;
+  width: 30%;
+}
+.HFrame5_2 {
+  font-family: "Kanit";
+  font-style: normal;
+  font-size: 21px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 20px;
+  width: 500px;
+  width: 50%;
+}
+.InFrame5_1 {
+  background: url("../../img/BGHome5_2.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 550px;
+  height: 470px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.HFrame5_3 {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  color: #0f1b50;
+  text-align: center;
+  margin-top: 100px;
+}
+.bttonFrame5 {
+  width: 222px;
+  height: 50px;
+  background: #c68900;
+  box-shadow: 0px 6px 6px rgb(248 213 134 / 30%);
+  border-radius: 12px;
+  border: none;
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.Carousel {
+  display: flex;
+  padding: 30px 30px 10px 30px;
+  margin-left: 20px;
+}
+.Boxcomment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  gap: 10px;
+  width: 420px;
+  height: 290px;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(177, 192, 255, 0.5);
+  border-radius: 12px;
+  margin-right: 20px;
+}
+.TextBoxcomment {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center;
+  color: #000000;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.TextBoxcomment2 {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  text-align: center;
+  color: #5b5b5b;
+  flex: none;
+  flex-grow: 0;
+}
+.NameBoxcomment {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #000000;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.DateBoxcomment {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: #5b5b5b;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.alice-carousel__dots-item.__active {
+  width: 32px !important;
+  height: 12px !important;
+  background: #f8d586 !important;
+  border-radius: 12px !important;
+  border: none !important;
+}
+.alice-carousel__dots-item {
+  box-sizing: border-box !important;
+  width: 12px !important;
+  height: 12px !important;
+  background: #ffffff !important;
+  border: 1px solid #b1c0ff !important;
+}
+
+.Frame6 {
+  text-align: -webkit-center;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(248, 213, 134, 0) -17.36%,
+    #f8d586 100%
+  );
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.BoxHFrame6 {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  color: #0f1b50;
+  text-align: center;
+}
+.HFrame6 {
+  font-family: "Kanit";
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 30px;
+}
+.inputFrame6 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 16px;
+  gap: 10px;
+  width: 70%;
+  height: 30px;
+  background: #ffffff;
+  border: none;
+  border-radius: 15px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.bttonFrame6 {
+  width: 25%;
+  height: 50px;
+  background: #c68900;
+  box-shadow: 0px 6px 6px rgb(248 213 134 / 30%);
+  border-radius: 12px;
+  border: none;
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.Frame7_1 {
+  padding-bottom: 40px;
+  background: #fbfbfb;
+  margin-top: -40px;
+}
+.HTextFrame7_1 {
+  margin-top: 40px;
+  padding-top: 25px;
+}
+
+.rowcontentFrame7_1 {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+.BoxcontentFrame7_1 {
+  text-align: left;
+}
+.BGHome7 {
+  width: 450px;
+}
+.BoxHcontentFrame7_1 {
+  display: flex;
+}
+.BoxHFrame7_1 {
+  color: #828282;
+  border: 1px solid #828282;
+  border-radius: 12px;
+  padding: 8px;
+  margin: 5px;
+  margin-left: 0px;
+  font-size: 10px;
+}
+.hrFrame7_1 {
+  color: #828282;
+  width: 93%;
+  margin-top: 30px;
+}
+
+.Frame7 {
+  width: 100%;
+  height: 30vw;
+  background: url("../../img/BGHome8.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.BoxFrame7 {
+  text-align: end;
+  width: 25vw;
+  position: relative;
+  top: 100px;
+  left: 50px;
+}
+.HFrame7_1 {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  color: #0f1b50;
+}
+
+.Frame8 {
+  width: 100%;
+  height: 352px;
+  background: #0f1b50;
+}
+.Frame8 button {
+  width: 210px;
+  height: 50px;
+  background: #c68900;
+  box-shadow: 0px 6px 6px rgb(0 0 0 / 30%);
+  border-radius: 12px;
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  margin-top: 10px;
+}
+#awards {
+  margin-right: 25px;
+}
+.BoxFrame8 {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+.hrBoxFrame8 {
+  width: 93%;
+  margin-top: 10px;
+  border: 0.5px solid #828282;
+}
+.BoxFrame8_2 {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 35px;
+}
+.BoxFrame8_2 p {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #ffffff;
+}
+.BoxFrame8_2 div {
+  background-color: #ffffff;
+  border-radius: 100%;
+  width: 40px;
+  height: 35px;
+  padding: 4px;
+  margin: 0px;
+  margin-left: 15px;
+}
+#BoxFrame8_2 {
+  font-size: 25px;
+  margin: 5px;
+  color: #0f1b50;
+}
+
+.Frame9 {
+  width: 100%;
+  height: 48px;
+  background: #5b5b5b;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+.Frame9 p {
+  padding: 12px;
+}
+
+.Frame10 {
+  display: flex;
+  padding: 30px;
+  text-align: left;
+  padding-top: 50px;
+  background: #fbfbfb;
+}
+.ButtonF10 {
+  display: flex;
+}
+.ButtonFrame10 {
+  width: 150px;
+  height: 50px;
+  background: #0f1b50;
+  border: 1px solid #000000;
+  box-shadow: 0px 6px 6px rgb(15 27 80 / 20%);
+  border-radius: 12px;
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  color: #ffffff;
+  margin-bottom: 15px;
+  margin-right: 20px;
+}
+.ButtonFrame10_2 {
+  width: 150px;
+  height: 50px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-shadow: 0px 6px 6px rgba(15, 27, 80, 0.2);
+  border-radius: 12px;
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+}
+.BoxtextFrame10 p {
+  display: inline;
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+}
+.BoxtextFrame10 {
+  margin-right: 140px;
+}
+
+/* @media only screen and (max-width: 1280px) {
+  .TextInFrame1_1 {
+    font-size: 23px;
+  }
+  .TextInFrame1_1_2 {
+    font-size: 18px;
+  }
+  .HTextFrame2 {
+    font-size: 30px;
+  }
+  .TextDFrame2 {
+    font-size: 18px;
+  }
+  .HTextFrame3 {
+    font-size: 40px;
+  }
+  .HFrame4 {
+    font-size: 50px;
+  }
+  .HFrame4_1 {
+    font-size: 20px;
+  }
+  .HBoxFrame4 {
+    font-size: 21px;
+  }
+  .HBoxFrame4_1 {
+    margin: 10px;
+  }
+  .HBoxFrame4_2 {
+    font-size: 21px;
+  }
+  .HBoxFrame4_2In {
+    font-size: 30px;
+    padding: 30px;
+  }
+  .HBoxFrame4_3 {
+    font-size: 10px;
+  }
+  .HBoxFrame4_2In2 {
+    font-size: 30px;
+  }
+  .bttonFrame4_2 {
+    margin-top: 4vw;
+  }
+  .bttonFrame4_3 {
+    margin-top: 23vw;
+  }
+  .Packages {
+    margin-left: 22px;
+  }
+  .HFrame5 {
+    font-weight: 800;
+    font-size: 28px;
+  }
+  .HFrame5_2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .InFrame1_1 {
+    width: 30%;
+  }
+  .bttonFrame5 {
+    width: 210px;
+  }
+  .Carousel {
+    padding: 0px;
+  }
+  .inputFrame6 {
+    width: 90%;
+  }
+  .bttonFrame6 {
+    width: 25%;
+    height: 50px;
+    font-size: 25px;
+  }
+  .Frame8 button {
+    width: 200px;
+    font-size: 20px;
+  }
+  .BoxFrame8_2 p {
+    font-size: 20px;
+  }
+  .BoxFrame8_2 div {
+    width: 35px;
+    height: 30px;
+    padding: 5px;
+  }
+  #BoxFrame8_2 {
+    font-size: 20px;
+  }
+} */
+
+/* @media only screen and (max-width: 1024px) {
+  .HFrame2 {
+    font-weight: 800;
+    font-size: 40px;
+  }
+  .HTextFrame2 {
+    font-size: 25px;
+  }
+  .TextDFrame2 {
+    font-size: 15px;
+  }
+  .Frame4 {
+    padding-top: 30px;
+  }
+  .HFrame4 {
+    font-size: 40px;
+  }
+  .HFrame4_1 {
+    font-size: 16px;
+  }
+  .BoxImgFrame4 img {
+    height: 60px;
+    width: 70px;
+  }
+  .HBoxFrame4 {
+    font-size: 21px;
+    height: 20px;
+  }
+  .HBoxFrame4_1 {
+    font-size: 12px;
+  }
+  .HBoxFrame4_2 {
+    font-size: 18px;
+    padding: 10px;
+    height: 90px;
+  }
+  .HBoxFrame4_2In {
+    font-size: 25px;
+    padding: 20px;
+    padding-top: 30px;
+    height: 90px;
+  }
+  .HBoxFrame4_2In2 {
+    font-size: 25px;
+    padding: 20px;
+    padding-top: 30px;
+    height: 90px;
+  }
+  .bttonFrame4 {
+    height: 60px;
+    font-size: 20px;
+    margin-top: 10vw;
+  }
+  .bttonFrame4_2 {
+    height: 60px;
+    font-size: 20px;
+    margin-top: 5vw;
+  }
+  .bttonFrame4_3 {
+    height: 60px;
+    font-size: 20px;
+    margin-top: 33vw;
+  }
+  .Packages {
+    margin-left: 18px;
+  }
+  .InFrame1_1 {
+    width: 32%;
+  }
+  .TextBoxcomment {
+    font-weight: 800;
+    font-size: 20px;
+  }
+  .TextBoxcomment2 {
+    font-size: 16px;
+  }
+  .Boxcomment {
+    margin-bottom: 15px;
+  }
+  .ImgFrame7 {
+    width: 75%;
+  }
+  #awards {
+    height: 90px;
+  }
+  .Frame8 button {
+    height: 45px;
+  }
+  .Frame10 {
+    padding: 0px;
+    padding-top: 30px;
+  }
+  .BoxtextFrame10 {
+    margin: 15px;
+    width: 85%;
+    margin-left: 0px;
+  }
+  .BoxtextFrame10 p {
+    font-size: 18px;
+  }
+  .ButtonFrame10 {
+    width: 100%;
+    height: 60px;
+    font-size: 25px;
+  }
+  .ButtonFrame10_2 {
+    width: 100%;
+    height: 60px;
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 912px) {
+  .TextInFrame1_1 {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  .TextInFrame1_1_2 {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  .InFrame1_1 {
+    width: 35%;
+  }
+  .HFrame2 {
+    font-size: 30px;
+  }
+  .imgFrame2 {
+    width: 60px;
+  }
+  .HTextFrame2 {
+    font-size: 20px;
+  }
+  .TextDFrame2 {
+    font-size: 13px;
+  }
+  .Packages {
+    justify-content: center;
+  }
+  .BoxFrame4 {
+    width: 60%;
+    height: 70vw;
+  }
+  .bttonFrame4 {
+    margin-top: 4vw;
+  }
+  .bttonFrame4_2 {
+    margin-top: 1vw;
+  }
+  .bttonFrame4_3 {
+    margin-top: 18vw;
+  }
+  .Check {
+    margin-top: 0px;
+  }
+  .InBoxFrame4 p {
+    margin-top: 3px;
+  }
+  .HFrame4_1 {
+    padding: 60px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+  .HFrame5 {
+    font-weight: 800;
+    font-size: 22px;
+  }
+  .HFrame5_2 {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .bttonFrame5 {
+    width: 165px;
+    font-size: 20px;
+  }
+  .alice-carousel {
+    margin-top: 25px;
+  }
+  .Carousel {
+    justify-content: center;
+  }
+  .Boxcomment {
+    width: 340px;
+    height: 310px;
+  }
+  .Frame7 {
+    padding: 50px 0px 0px 30px;
+  }
+  .Frame8 {
+    padding: 0px 0px 0px 25px;
+  }
+  .BoxFrame8 {
+    display: grid;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  #awards {
+    height: 90px;
+    margin-top: 15px;
+  }
+} */
+/* @media only screen and (max-width: 820px) {
+  .TextInFrame1_1 {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  .TextInFrame1_1_2 {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  .InFrame1_1 {
+    width: 35%;
+  }
+  .HFrame2 {
+    font-size: 30px;
+  }
+  .imgFrame2 {
+    width: 60px;
+  }
+  .HTextFrame2 {
+    font-size: 20px;
+  }
+  .TextDFrame2 {
+    font-size: 13px;
+  }
+  .Packages {
+    justify-content: center;
+  }
+  .BoxFrame4 {
+    width: 60%;
+    height: 70vw;
+  }
+  .bttonFrame4 {
+    margin-top: 4vw;
+  }
+  .bttonFrame4_2 {
+    margin-top: 1vw;
+  }
+  .bttonFrame4_3 {
+    margin-top: 18vw;
+  }
+  .Check {
+    margin-top: 0px;
+  }
+  .InBoxFrame4 p {
+    margin-top: 3px;
+  }
+  .HFrame4_1 {
+    padding: 60px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+  .HFrame5 {
+    font-weight: 800;
+    font-size: 22px;
+  }
+  .HFrame5_2 {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .bttonFrame5 {
+    width: 165px;
+    font-size: 20px;
+  }
+  .alice-carousel {
+    margin-top: 25px;
+  }
+  .Carousel {
+    justify-content: center;
+  }
+  .Boxcomment {
+    width: 340px;
+    height: 310px;
+  }
+  .Frame7 {
+    padding: 50px 0px 0px 30px;
+  }
+  .Frame8 {
+    padding: 0px 0px 0px 25px;
+  }
+  .BoxFrame8 {
+    display: grid;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  #awards {
+    height: 90px;
+    margin-top: 15px;
+  }
+} */
+
+/* @media only screen and (max-width: 768px) {
+  .BoxFrame4 {
+    height: 75vw;
+  }
+  .bttonFrame4_3 {
+    margin-top: 20vw;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .TextInFrame1_1 {
+    font-size: 16px;
+  }
+  .TextInFrame1_1_2 {
+    font-size: 10px;
+  }
+  .InFrame1_1 {
+    width: 40%;
+  }
+  .HFrame2 {
+    font-size: 25px;
+  }
+  .InboxFrame2 {
+    display: grid;
+    justify-content: center;
+  }
+  .BGimgFrame2 {
+    display: flex;
+    height: 20vw;
+    width: 70vw;
+  }
+  .imgFrame2 {
+    width: 60px;
+    height: 50px;
+  }
+  .TextDFrame2 {
+    width: 40vw;
+  }
+  .Future {
+    font-weight: 600;
+    font-size: 15px;
+    width: 70px;
+    height: 25px;
+  }
+  .HTextFrame3 {
+    font-size: 30px;
+  }
+  .HFrame4 {
+    font-size: 30px;
+  }
+  .alice-carousel {
+    margin-top: 0px;
+  }
+  .BoxFrame4 {
+    height: 90vw;
+    width: 75%;
+  }
+  .bttonFrame4_3 {
+    margin-top: 24vw;
+  }
+  .bttonFrame5 {
+    width: 145px;
+  }
+  #imgFrame5 {
+    margin-bottom: 0px;
+    font-size: 13px;
+    width: 100px;
+    height: 30px;
+  }
+  .InFrame5 {
+    padding: 0px 0px 0px 10px;
+  }
+  .InFrame5_1 {
+    width: 65%;
+    height: 50vw;
+
+    background-color: #fff;
+    position: relative;
+    left: 0vw;
+  }
+  .HFrame5 {
+    font-weight: 800;
+    font-size: 20px;
+    margin-top: 60px;
+  }
+  .HFrame5_3 {
+    font-size: 30px;
+    margin-bottom: 0px;
+  }
+  .HFrame6 {
+    font-size: 20px;
+  }
+  .inputFrame6 {
+    width: 80%;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+  .bttonFrame6 {
+    font-size: 20px;
+    border-radius: 9px;
+  }
+  .Frame7 {
+    padding: 50px 0px 0px 15px;
+    height: auto;
+  }
+  .BoxFrame7 {
+    width: 50vw;
+  }
+  .ImgFrame7 {
+    width: 100%;
+  }
+  .Logo7 {
+    width: 25vw;
+  }
+  .Frame10 {
+    padding-top: 10px;
+  }
+  .BoxtextFrame10 p {
+    font-size: 12px;
+  }
+} */
+
+/* @media only screen and (max-width: 540px) {
+  .InFrame1_1 {
+    width: 45%;
+  }
+  .BGimgFrame2 {
+    height: 25vw;
+  }
+  .BoxFrame4 {
+    height: 105vw;
+    width: 85%;
+  }
+  .Packages {
+    margin-left: 0px;
+    margin-top: 50px;
+  }
+  .HFrame5 {
+    font-size: 15px;
+  }
+  .HFrame5_2 {
+    font-size: 11px;
+  }
+  .HFrame5_3 {
+    margin-bottom: 15px;
+  }
+  .InFrame5_1 {
+    width: 96%;
+  }
+  .bttonFrame6 {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .Home {
+    padding: 0px;
+  }
+  .Frame1 {
+    height: 100vw;
+    text-align: -webkit-center;
+  }
+  .InFrame1 {
+    display: contents;
+  }
+  .InFrame1_2 {
+    width: 100%;
+    height: 70vw;
+    left: 0px;
+  }
+  .InFrame1_3 {
+    width: 100%;
+    height: 70vw;
+    left: 0px;
+  }
+  .InFrame1_4 {
+    width: 100%;
+    height: 70vw;
+    left: 0px;
+  }
+  .TextInFrame1_1 {
+    font-size: 20px;
+    margin: 0px;
+    text-align: center;
+  }
+  .TextInFrame1_1_2 {
+    font-size: 15px;
+    margin: 0px;
+    text-align: center;
+  }
+  .BGimgFrame2 {
+    height: 30vw;
+  }
+  .Frame3 {
+    text-align: -webkit-center;
+  }
+  .InFrame3_1 {
+    width: 100%;
+    height: 70vw;
+    left: 0px;
+  }
+  .InFrame3_2 {
+    width: 100%;
+    height: 70vw;
+    left: 0px;
+  }
+  .InFrame3_3 {
+    width: 100%;
+    height: 70vw;
+    left: 0px;
+  }
+  .InFrame3_4 {
+    width: 100%;
+    height: 70vw;
+    left: 0px;
+  }
+  .BoxFrame4 {
+    height: 115vw;
+  }
+  .InFrame5 {
+    display: contents;
+    padding: 0px;
+    text-align: -webkit-center;
+    margin: 0px;
+  }
+  .InFrame5_1 {
+    width: 100%;
+    height: 70vw;
+  }
+  .InFrame1_1 {
+    width: 60%;
+    background: #b9b9b9;
+    text-align: -webkit-center;
+  }
+  .InFrame5_2 {
+    width: 100%;
+    background: #b9b9b9;
+    text-align: -webkit-center;
+    padding-bottom: 30px;
+  }
+  .HFrame5 {
+    font-size: 20px;
+    margin-top: 0px;
+    text-align: center;
+  }
+  .HFrame5_2 {
+    font-size: 15px;
+    width: 60vw;
+    text-align: center;
+  }
+  .Frame7 {
+    display: contents;
+  }
+  .ImgFrame7 {
+    height: 50vh;
+  }
+  .BoxFrame7 {
+    width: 100vw;
+    text-align: center;
+    padding-top: 30px;
+    background: #b9b9b9;
+  }
+  .BoxFrame7 p {
+    text-align: center;
+    width: 100vw;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    margin: 0px;
+  }
+  #awards {
+    height: 25vw;
+    margin-top: 15px;
+    margin-right: 30px;
+  }
+  .Frame8 {
+    padding: 0px 25px 0px 25px;
+    height: 390px;
+  }
+  .BoxtextFrame10 {
+    margin-left: 10px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .BGimgFrame2 {
+    height: 40vw;
+  }
+  .Frame3 {
+    height: 110vw;
+  }
+  .BoxFrame4 {
+    height: 135vw;
+  }
+}
+@media only screen and (max-width: 393px) {
+  .BGimgFrame2 {
+    height: 50vw;
+  }
+  .BoxFrame4 {
+    height: 145vw;
+  }
+  #awards {
+    margin-right: 20px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .Frame1 {
+    height: 110vw;
+  }
+  .Frame3 {
+    height: 125vw;
+  }
+  .ButtonFrame10 {
+    width: 95%;
+  }
+  .ButtonFrame10_2 {
+    width: 95%;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .BoxFrame4 {
+    height: 155vw;
+  }
+} */
