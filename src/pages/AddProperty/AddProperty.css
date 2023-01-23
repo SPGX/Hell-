@@ -318,3 +318,9 @@ input[type='radio']:checked {
 	text-align: left;
 	margin-top: 10px;
 }
+.input:focus {
+	outline: none !important;
+	border-color: transparent !important;
+	box-shadow: 0 0 10px transparent !important;
+	border-radius: 4px;
+}
