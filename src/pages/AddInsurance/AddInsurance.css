@@ -2,6 +2,10 @@
   background: #f9f9f9;
   padding: 10px 15% 10px 15%;
 }
+.AddInsuranceTop {
+  background: #f9f9f9;
+  padding: 10px 15% 10px 15%;
+}
 .AddInsuranceFame1 {
   text-align: left;
   display: flex;
@@ -24,6 +28,14 @@
   margin-right: 2px;
   color: #000000;
 }
+.HTextAddInsuranceFame1_26 {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  margin-right: 2px;
+  color: rgba(15, 27, 80, 1);
+}
 
 .AddInsuranceFame2 {
   background-color: #ffffff;
@@ -36,6 +48,14 @@
   font-weight: 700;
   font-size: 40px;
   color: rgba(0, 0, 0, 1);
+  text-align: left;
+}
+.HTextAddInsuranceFame26 {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  color: rgba(15, 27, 80, 1);
   text-align: left;
 }
 .uploadText {
@@ -69,6 +89,35 @@
   font-size: 14px;
   color: rgba(0, 0, 0, 1);
   text-align: left;
+}
+.TextUpload3 {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 12px;
+  color: rgba(91, 91, 91, 1);
+  text-align: left;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.TextUpload4 {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 12px;
+  color: rgba(91, 91, 91, 1);
+  text-align: left;
+  cursor: pointer;
+}
+.TextUpload5 {
+  font-family: "Kanit";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 1);
+  text-align: left;
+  text-decoration: underline;
+  cursor: pointer;
 }
 .form {
   text-align: left;

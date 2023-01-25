@@ -12,7 +12,7 @@ import 'react-phone-number-input/style.css';
 
 import '../AddProperty.css';
 
-const Property_home = () => {
+const Property_region = () => {
 	const navigate = useNavigate();
 	const [images, setImages] = useState(0); // 1 data = true
 	const [uploadmore, setUploadMore] = useState(0);  //1 data = true
@@ -27,11 +27,11 @@ const Property_home = () => {
 					<p className='HTextAddInsuranceFame1_2'>{'>'}</p>
 					<p className='HTextAddInsuranceFame1'>ใส่ข้อมูลทรัพย์สิน </p>
 					<p className='HTextAddInsuranceFame1_2'>{'>'}</p>
-					<p className='HTextAddInsuranceFame1_2'>ทรัพย์สินประเภทบ้านและสิ่งปลูกสร้าง</p>
+					<p className='HTextAddInsuranceFame1_2'>เพิ่มข้อมูลทรัพย์สินประเภทที่ดิน</p>
 				</div>
 
 				<div className='AddInsuranceFame2'>
-					<p className='HTextAddInsuranceFame2'>เพิ่มข้อมูลทรัพย์สินประเภทบ้านและสิ่งปลูกสร้าง</p>
+					<p className='HTextAddInsuranceFame26'>เพิ่มข้อมูลทรัพย์สินประเภทที่ดิน</p>
 
 					<div style={styles.borderTextTitle}>
 						<p className='HTextDBFame2'>สินทรัพย์ชิ้นนี้เป็นสินสมรสหรือไม่?</p>
@@ -555,4 +555,4 @@ const styles = {
 	},
 };
 
-export default Property_home;
+export default Property_region;

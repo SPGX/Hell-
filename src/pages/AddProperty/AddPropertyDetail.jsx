@@ -37,6 +37,7 @@ const AddPropertyDetail = () => {
 			name: 'ที่ดิน',
 			img: img2,
 			des: 'โฉนดที่ดิน/นส.3,นส.3ก/สปก.4-01/ภ.บ.ท.5',
+			navigate: '/Property_region',
 		},
 		{
 			id: 3,
@@ -44,6 +45,7 @@ const AddPropertyDetail = () => {
 			name: 'ยานพาหนะ',
 			img: img3,
 			des: 'รถยนต์/มอเตอร์ไซค์/เครื่องบิน/เรือ/รถบรรทุก/เครื่องจักรการเกษตร,จักรยาน',
+			navigate: '/Property_car',
 		},
 		{
 			id: 4,
@@ -51,6 +53,7 @@ const AddPropertyDetail = () => {
 			name: 'บัญชีเงินฝากธนาคาร',
 			img: img4,
 			des: 'ประเภทบัญชีออมทรัพย์/เงินฝากประจำ/กระแสรายวัน',
+			navigate: '/Property_bookbank',
 		},
 		{
 			id: 5,
@@ -58,6 +61,7 @@ const AddPropertyDetail = () => {
 			name: 'สินค้า Luxury',
 			img: img5,
 			des: 'นาฬิกา/เครื่องเพชร/กระเป๋า/ร้องเท้า/เสื้อ/เฟอร์นิเจอร์/อื่นๆ',
+			navigate: '/Property_luxury',
 		},
 		{
 			id: 6,
@@ -65,6 +69,7 @@ const AddPropertyDetail = () => {
 			name: 'งานศิลปะ',
 			img: img6,
 			des: 'จิตรกรรม/ประติมากรรม/สถาปัตยกรรม/ ภาพพิมพ์/ภาพถ่าย/สื่อผสม/วรรณกรรม/อื่นๆ',
+			navigate: '/Property_art',
 		},
 		{
 			id: 7,
@@ -72,6 +77,7 @@ const AddPropertyDetail = () => {
 			name: 'NFT',
 			img: img7,
 			des: 'ศิลปะ/แลนด์/เกมส์/เพลง',
+			navigate: '/Property_nft',
 		},
 		{
 			id: 8,
@@ -79,6 +85,7 @@ const AddPropertyDetail = () => {
 			name: 'ทอง',
 			img: img8,
 			des: 'ทองแท่ง/ทองรูปพรรณ/แอปออมทอง',
+			navigate: '/Property_gold',
 		},
 		{
 			id: 9,
@@ -86,6 +93,7 @@ const AddPropertyDetail = () => {
 			name: 'คริปโตคอยน์',
 			img: img9,
 			des: 'Exchange/Wallet',
+			navigate: '/Property_crypto',
 		},
 		{
 			id: 10,
@@ -93,6 +101,7 @@ const AddPropertyDetail = () => {
 			name: 'หุ้นบริษัท',
 			img: img10,
 			des: 'หุ้นในบริษัทจํากัด/หุ้นในตลาดหลักทรัพย์/หุ้นในกิจการไม่มีทะเบียน เช่น ร้านขายของชํา,อื่นๆ',
+			navigate: '/Property_graph',
 		},
 		{
 			id: 11,
@@ -100,6 +109,7 @@ const AddPropertyDetail = () => {
 			name: 'เจ้าหนี้สัญญา',
 			img: img11,
 			des: 'เจ้าหนี้สัญญากู้ยืมเงิน/เจ้าหนี้สัญญาเช่า/สิทธิบัตร /ลิขสิทธ์/เจ้าหนี้อื่นๆ',
+			navigate: '/Property_document',
 		},
 		{
 			id: 12,
@@ -107,6 +117,7 @@ const AddPropertyDetail = () => {
 			name: 'เงินเก็บตู้เซฟ',
 			img: img12,
 			des: 'เงินสด/สิ่งของมีค่าที่ทำการเก็บใว้ในเซฟ',
+			navigate: '/Property_save',
 		},
 	];
 
@@ -135,7 +146,6 @@ const AddPropertyDetail = () => {
 				</div>
 				{/*  ======== loop ========*/}
 				{dataProperty.map((item, index) => {
-					console.log('itemitem >>', index);
 					return (
 						<>
 							<div key={index} style={{width: '100%', display: 'flex', justifyContent: 'flex-start'}}>
@@ -160,8 +170,8 @@ const AddPropertyDetail = () => {
 												height: '205px',
 											}}
 										/>
-										<p className='Title'>กรอกข้อมูลทรัพย์สิน</p>
-										<p className='Des'>กรอกข้อมูลทรัพย์สิน</p>
+										<p className='Title'>{item?.name}</p>
+										<p className='Des'>{item?.des}</p>
 										<button
 											style={{
 												border: '1px solid rgba(15, 27, 80, 1)',

@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-pascal-case */
 /*Version 0.3*/
 import './App.css';
 import React from 'react';
@@ -32,7 +33,14 @@ import AddAssignLeacy from './pages/AddAssignLeacy/AddAssignLeacy';
 import AddProperty from './pages/AddProperty/AddProperty';
 import AddPropertyDetail from './pages/AddProperty/AddPropertyDetail';
 // detail property
-import Property_home from './pages/AddProperty/Detail/Property_home'
+import Property_home from './pages/AddProperty/Detail/Property_home';
+import Property_region from './pages/AddProperty/Detail/Property_region';
+import Property_car from './pages/AddProperty/Detail/Property_car';
+import Property_bookbank from './pages/AddProperty/Detail/Property_bookbank';
+import Property_luxury from './pages/AddProperty/Detail/Property_luxury';
+import Property_art from './pages/AddProperty/Detail/Property_art';
+import Property_nft from './pages/AddProperty/Detail/Property_nft';
+import Property_gold from './pages/AddProperty/Detail/Property_gold';
 //
 import AddDocument from './pages/AddDocument/AddDocument';
 // import About from "./pages/About";
@@ -99,8 +107,15 @@ function App() {
 						<Route path='/AddRecieverLeacy' element={<AddRecieverLeacy />}></Route>
 						{/* new router */}
 						<Route path='/AddProperty' element={<AddProperty />}></Route>
-            <Route path='/AddPropertyDetail' element={<AddPropertyDetail />}></Route>
-            <Route path='/Property_home' element={<Property_home />}></Route>
+						<Route path='/AddPropertyDetail' element={<AddPropertyDetail />}></Route>
+						<Route path='/Property_home' element={<Property_home />}></Route>
+						<Route path='/Property_region' element={<Property_region />}></Route>
+						<Route path='/Property_car' element={<Property_car />}></Route>
+						<Route path='/Property_bookbank' element={<Property_bookbank />}></Route>
+						<Route path='/Property_luxury' element={<Property_luxury />}></Route>
+						<Route path='/Property_art' element={<Property_art />}></Route>
+						<Route path='/Property_nft' element={<Property_nft />}></Route>
+						<Route path='/Property_gold' element={<Property_gold />}></Route>
 						{/* <Route path="/AddAssignLeacy" element={<AddAssignLeacy />}></Route>
             <Route path="/AddDocument" element={<AddDocument />}></Route>
             <Route path="/PremiumPage2"element={<PremiumPage2 />}></Route>
