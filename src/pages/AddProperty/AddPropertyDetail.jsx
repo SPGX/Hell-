@@ -89,8 +89,8 @@ const AddPropertyDetail = () => {
 		},
 		{
 			id: 9,
-			title: 'เพิ่มข้อมูลทรัพย์สินประเภทคริปโตคอยน์',
-			name: 'คริปโตคอยน์',
+			title: 'เพิ่มข้อมูลทรัพย์สินประเภทคริปโตคอยน์',
+			name: 'คริปโตคอยน์',
 			img: img9,
 			des: 'Exchange/Wallet',
 			navigate: '/Property_crypto',
@@ -98,7 +98,7 @@ const AddPropertyDetail = () => {
 		{
 			id: 10,
 			title: 'เพิ่มข้อมูลทรัพย์สินประเภทหุ้นบริษัท',
-			name: 'หุ้นบริษัท',
+			name: 'หุ้นบริษัท',
 			img: img10,
 			des: 'หุ้นในบริษัทจํากัด/หุ้นในตลาดหลักทรัพย์/หุ้นในกิจการไม่มีทะเบียน เช่น ร้านขายของชํา,อื่นๆ',
 			navigate: '/Property_graph',

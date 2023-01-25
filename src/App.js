@@ -41,6 +41,10 @@ import Property_luxury from './pages/AddProperty/Detail/Property_luxury';
 import Property_art from './pages/AddProperty/Detail/Property_art';
 import Property_nft from './pages/AddProperty/Detail/Property_nft';
 import Property_gold from './pages/AddProperty/Detail/Property_gold';
+import Property_crypto from './pages/AddProperty/Detail/Property_crypto';
+import Property_graph from './pages/AddProperty/Detail/Property_graph';
+import Property_document from './pages/AddProperty/Detail/Property_document';
+import Property_save from './pages/AddProperty/Detail/Property_save';
 //
 import AddDocument from './pages/AddDocument/AddDocument';
 // import About from "./pages/About";
@@ -116,15 +120,19 @@ function App() {
 						<Route path='/Property_art' element={<Property_art />}></Route>
 						<Route path='/Property_nft' element={<Property_nft />}></Route>
 						<Route path='/Property_gold' element={<Property_gold />}></Route>
+						<Route path='/Property_crypto' element={<Property_crypto />}></Route>
+						<Route path='/Property_graph' element={<Property_graph />}></Route>
+						<Route path='/Property_document' element={<Property_document />}></Route>
+						<Route path='/Property_save' element={<Property_save />}></Route>
 						{/* <Route path="/AddAssignLeacy" element={<AddAssignLeacy />}></Route>
-            <Route path="/AddDocument" element={<AddDocument />}></Route>
-            <Route path="/PremiumPage2"element={<PremiumPage2 />}></Route>
-            <Route path="/PremiumPage"element={<PremiumPage />}></Route> */}
+						<Route path="/AddDocument" element={<AddDocument />}></Route>
+						<Route path="/PremiumPage2"element={<PremiumPage2 />}></Route>
+						<Route path="/PremiumPage"element={<PremiumPage />}></Route> */}
 						{/* <Route path="/About"element={<About />}></Route> */}
 
 						{/* <Route path="/about" element={<About />}></Route>
-          <Route path="/premium" element={<PremiumPage />}></Route>
-          <Route path="/premium_2" element={<PremiumPage2 />}></Route> */}
+						<Route path="/premium" element={<PremiumPage />}></Route>
+						<Route path="/premium_2" element={<PremiumPage2 />}></Route> */}
 					</Routes>
 				</Router>
 			</div>

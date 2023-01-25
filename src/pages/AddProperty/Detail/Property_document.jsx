@@ -12,7 +12,7 @@ import 'react-phone-number-input/style.css';
 
 import '../AddProperty.css';
 
-const Property_gold = () => {
+const Property_document = () => {
 	const navigate = useNavigate();
 	const [images, setImages] = useState(0); // 1 data = true
 	const [uploadmore, setUploadMore] = useState(0); //1 data = true
@@ -21,17 +21,17 @@ const Property_gold = () => {
 
 	return (
 		<>
-			<div className='AddInsuranceTop'>
+			<div className='AddInsurance'>
 				<div className='AddInsuranceFame1'>
 					<p className='HTextAddInsuranceFame1'>Dashboard </p>
 					<p className='HTextAddInsuranceFame1_2'>{'>'}</p>
 					<p className='HTextAddInsuranceFame1'>ใส่ข้อมูลทรัพย์สิน </p>
 					<p className='HTextAddInsuranceFame1_2'>{'>'}</p>
-					<p className='HTextAddInsuranceFame1_2'>ทรัพย์สินประเภททอง</p>
+					<p className='HTextAddInsuranceFame1_2'>ทรัพย์สินประเภทเจ้าหนี้สัญญา</p>
 				</div>
 
 				<div className='AddInsuranceFame2'>
-					<p className='HTextAddInsuranceFame26'>เพิ่มข้อมูลทรัพย์สินประเภททอง</p>
+					<p className='HTextAddInsuranceFame26'>เพิ่มข้อมูลทรัพย์สินประเภทเจ้าหนี้สัญญา</p>
 
 					<div style={styles.borderTextTitle}>
 						<p className='HTextDBFame2'>สินทรัพย์ชิ้นนี้เป็นสินสมรสหรือไม่?</p>
@@ -44,68 +44,70 @@ const Property_gold = () => {
 								<input
 									style={styles.TextInputs}
 									defaultValue={''}
-									placeholder={'ชื่อที่ผู้รับมรดกจะเข้าใจได้โดยง่ายและบอกความรู้สึกแทนใจได้'}
+									placeholder={'ชื่อที่ผู้รับมรดกจะเข้าใจได้โดยง่ายและบอกความรู้สึกแทนใจได้'}
 								/>
 							</div>
 							<div style={{display: 'flex', flex: 0.45, flexDirection: 'column'}}>
 								<div style={styles.textTitle}>ประเภททรัพย์สิน</div>
-								<input style={styles.TextInputs} defaultValue={''} placeholder={'ทองแท่ง'} />
+								<input style={styles.TextInputs} defaultValue={''} placeholder={'เจ้าหนี้สัญญากู้ยืมเงิน'} />
 							</div>
 						</div>
 					</div>
-					{/* 4 row */}
+					{/* 2 row */}
 					<div style={styles.TextTop}>
-						<div style={{display: 'flex', justifyContent: 'space-between', flex: 1, flexWrap: 'wrap'}}>
-							<div
-								style={{
-									display: 'flex',
-									flex: 4,
-									flexDirection: 'row',
-									flexWrap: 'wrap',
-									justifyContent: 'flex-start',
-									alignItems: 'flex-start',
-								}}
-							>
-								<div style={{display: 'flex', flexDirection: 'column', flex: 0.6}}>
-									<div style={styles.textTitle}>น้ำหนักทอง</div>
-									<input style={styles.TextInputsCar} defaultValue={''} placeholder={'ระบุน้ำหนักทอง'} />
-								</div>
-								<div style={{width: '10px'}} />
-								<div style={{display: 'flex', flexDirection: 'column'}}>
-									<div style={{...styles.textTitle}}>หน่วยน้ำหนักทอง</div>
-									{/* <div style={{...styles.textTitle, marginLeft: '10px'}}>หน่วยน้ำหนักทอง</div> */}
-									<input style={styles.TextInputsCar} defaultValue={''} placeholder={'บาท'} />
-									{/* <div style={styles.TextInputsCar2}>บาท</div> */}
+						<div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', flex: 1}}>
+							<div style={{display: 'flex', flex: 0.45, flexDirection: 'column'}}>
+								<div style={styles.textTitle}>จำนวนเงินให้กู้ยืม</div>
+								<input style={styles.TextInputs} defaultValue={''} placeholder={'ใส่จำนวนเงิน'} />
+							</div>
+							<div style={{display: 'flex', flex: 0.45, flexDirection: 'column'}}>
+								<div style={styles.textTitleFake}>อัตราผลตอบแทน</div>
+								<div style={{flexDirection: 'row', display: 'flex'}}>
+									<input style={styles.TextInputs3} defaultValue={''} placeholder={'เปอร์เซ็นต์'} />
+									<input disabled style={styles.TextInputs4} defaultValue={''} placeholder={'รายปี'} />
 								</div>
 							</div>
-							<div
-								style={{
-									display: 'flex',
-									flex: 4,
-									flexDirection: 'row',
-									flexWrap: 'wrap',
-									justifyContent: 'flex-start',
-								}}
-							>
-								<div style={{display: 'flex', flexDirection: 'column'}}>
-									<div style={styles.textTitle}>ราคารับซื้อ</div>
-									<input style={styles.TextInputsCar} defaultValue={''} placeholder={'ราคารับซื้อ'} />
+						</div>
+					</div>
+					{/* 3 row */}
+					<div style={styles.TextTop}>
+						<div
+							style={{
+								display: 'flex',
+								flexDirection: 'row',
+								justifyContent: 'space-between',
+								flex: 1,
+								flexWrap: 'wrap',
+							}}
+						>
+							<div style={{display: 'flex', flex: 1, flexDirection: 'column'}}>
+								<div style={styles.textTitle}>วันที่คำสั่งซื้อมีผล</div>
+								<div style={{flexDirection: 'row', display: 'flex', marginRight: '10px'}}>
+									<input style={styles.TextInputsCar} defaultValue={''} placeholder={'ปี'} />
 								</div>
-								<div style={{width: '10px'}} />
-								<div style={{display: 'flex', flexDirection: 'column'}}>
-									<div style={styles.textTitle}>มูลค่าทอง</div>
-									<input style={styles.TextInputsCar} defaultValue={''} placeholder={'ใส่มูลค่าทรัพย์สินโดยประมาณ'} />
+							</div>
+							<div style={{display: 'flex', flex: 1, flexDirection: 'column'}}>
+								<div style={{...styles.textTitle, marginLeft: '5%', color: 'transparent'}}>ปี</div>
+								<div style={{flexDirection: 'row', display: 'flex', justifyContent: 'center', marginRight: '10px'}}>
+									<input style={styles.TextInputsCar} defaultValue={''} placeholder={'เดือน'} />
+								</div>
+							</div>
+							<div style={{display: 'flex', flex: 1, flexDirection: 'column'}}>
+								<div style={{...styles.textTitle, marginLeft: '10%', color: 'transparent'}}>รุ่น</div>
+								<div style={{flexDirection: 'row', display: 'flex', justifyContent: 'flex-end'}}>
+									<input style={styles.TextInputsCar} defaultValue={''} placeholder={'วันที่'} />
 								</div>
 							</div>
 						</div>
 					</div>
 					{/* 1 row */}
 					<div style={styles.TextTop}>
-						<div style={styles.textTitle}>สถานที่เก็บทรัพย์</div>
+						<div style={styles.textTitle}>มูลค่า(ระบบจะคำนวณให้)</div>
 						<div>
-							<input style={styles.TextInputs} defaultValue={''} placeholder={'ระบุสถานที่เก็บทอง'} />
+							<input style={styles.TextInputs} defaultValue={''} placeholder={'มูลค่า'} />
 						</div>
 					</div>
+
 					{/* 1 row */}
 					<div style={styles.TextTop}>
 						<div style={styles.textTitle}>คำอธิบายเพิ่มเติม(optional)</div>
@@ -425,15 +427,8 @@ const styles = {
 	TextInputsCar: {
 		padding: '8px',
 		border: '1px solid rgba(189, 189, 189, 1)',
-		// flex: 1,
-		display: 'flex',
-		borderRadius: '4px',
-	},
-	TextInputsCar2: {
-		padding: '8px',
-		border: '1px solid rgba(189, 189, 189, 1)',
+		// width: '90%',
 		flex: 1,
-		display: 'flex',
 		borderRadius: '4px',
 	},
 	TextInputsRow: {
@@ -457,4 +452,4 @@ const styles = {
 	},
 };
 
-export default Property_gold;
+export default Property_document;
