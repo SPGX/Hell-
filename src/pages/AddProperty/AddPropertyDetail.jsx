@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 
 import {useNavigate} from 'react-router-dom';
 
@@ -22,6 +22,24 @@ import './AddProperty.css';
 const AddPropertyDetail = () => {
 	const navigate = useNavigate();
 
+	const [windowSize, setWindowSize] = useState([window.innerWidth, window.innerHeight]);
+
+	const [getDataWithAPI, setgetDataWithAPI] = useState('');
+
+	useEffect(() => {
+		const handleWindowResize = () => {
+			setWindowSize([window.innerWidth, window.innerHeight]);
+		};
+
+		window.addEventListener('resize', handleWindowResize);
+		console.log('windowSize 1', windowSize[0]);
+
+		return () => {
+			window.removeEventListener('resize', handleWindowResize);
+			console.log('windowSize 2', windowSize[0]);
+		};
+	});
+
 	const dataProperty = [
 		{
 			id: 1,
@@ -30,6 +48,108 @@ const AddPropertyDetail = () => {
 			img: img1,
 			des: 'บ้าน/คอนโดมีเนียม/ทาวเฮาส์/บ้านพักตากอากาศ  /อาคารพาณิชย์/ตึกสํานักงาน/โรงงาน',
 			navigate: '/Property_home',
+			data: [
+				{
+					name: 'บ้านพระนครริมน้ำ',
+					des_name: 'บ้านพักตากอากาศ',
+					ownershipTitle: 'สิทธิ์ในทรัพย์',
+					ownership: 'เจ้าของ 100%',
+					sizeTitle: 'ขนาดพื้นที่',
+					size: '120 ตรม.',
+					detailTitle: 'รายละเอียด',
+					detail: 'ถาระติดผัน เช่น ผ่อนกับธนาคาร XYZ 30ปีจะสิ้นสุดใน กพ. 81',
+					valueTitle: 'มูลค่า',
+					value: '7.5 ล้านบาท',
+					addressTitle: 'ที่อยู่',
+					address: '107/42 แขวงบางจาก เขตพระโขนง จังหวัดกรุงเทพฯ 10260',
+					other_detailTitle: 'คำอธิบายเพิ่มเติม',
+					other_detail: 'บ้านริมน้ำอายุ 100 ปี สภาพมีผุพังพอประมาณ',
+					documentTitle: 'เอกสาร',
+					document: 'File name.pdf',
+					img: {
+						img1:
+							'https://st.hzcdn.com/simgs/pictures/exteriors/denver-modern-home-materials-marketing-img~a07116690c6c2c62_9-6685-1-6fe352d.jpg',
+						img2:
+							'https://img.iproperty.com.my/angel-legacy/1110x624-crop/static/2021/11/House-with-3-storey-is-match-to-you.jpg',
+						img3: 'https://www.dazzlingbuildings.com/wp-content/uploads/2020/08/gallery-img-D1-132.5-sqm.jpg',
+					},
+				},
+				{
+					name: 'บ้านพระนครริมน้ำ',
+					des_name: 'บ้านพักตากอากาศ',
+					ownershipTitle: 'สิทธิ์ในทรัพย์',
+					ownership: 'เจ้าของ 100%',
+					sizeTitle: 'ขนาดพื้นที่',
+					size: '120 ตรม.',
+					detailTitle: 'รายละเอียด',
+					detail: 'ถาระติดผัน เช่น ผ่อนกับธนาคาร XYZ 30ปีจะสิ้นสุดใน กพ. 81',
+					valueTitle: 'มูลค่า',
+					value: '7.5 ล้านบาท',
+					addressTitle: 'ที่อยู่',
+					address: '107/42 แขวงบางจาก เขตพระโขนง จังหวัดกรุงเทพฯ 10260',
+					other_detailTitle: 'คำอธิบายเพิ่มเติม',
+					other_detail: 'บ้านริมน้ำอายุ 100 ปี สภาพมีผุพังพอประมาณ',
+					documentTitle: 'เอกสาร',
+					document: 'File name.pdf',
+					img: {
+						img1:
+							'https://st.hzcdn.com/simgs/pictures/exteriors/denver-modern-home-materials-marketing-img~a07116690c6c2c62_9-6685-1-6fe352d.jpg',
+						img2:
+							'https://img.iproperty.com.my/angel-legacy/1110x624-crop/static/2021/11/House-with-3-storey-is-match-to-you.jpg',
+						img3: 'https://www.dazzlingbuildings.com/wp-content/uploads/2020/08/gallery-img-D1-132.5-sqm.jpg',
+					},
+				},
+				{
+					name: 'บ้านพระนครริมน้ำ',
+					des_name: 'บ้านพักตากอากาศ',
+					ownershipTitle: 'สิทธิ์ในทรัพย์',
+					ownership: 'เจ้าของ 100%',
+					sizeTitle: 'ขนาดพื้นที่',
+					size: '120 ตรม.',
+					detailTitle: 'รายละเอียด',
+					detail: 'ถาระติดผัน เช่น ผ่อนกับธนาคาร XYZ 30ปีจะสิ้นสุดใน กพ. 81',
+					valueTitle: 'มูลค่า',
+					value: '7.5 ล้านบาท',
+					addressTitle: 'ที่อยู่',
+					address: '107/42 แขวงบางจาก เขตพระโขนง จังหวัดกรุงเทพฯ 10260',
+					other_detailTitle: 'คำอธิบายเพิ่มเติม',
+					other_detail: 'บ้านริมน้ำอายุ 100 ปี สภาพมีผุพังพอประมาณ',
+					documentTitle: 'เอกสาร',
+					document: 'File name.pdf',
+					img: {
+						img1:
+							'https://st.hzcdn.com/simgs/pictures/exteriors/denver-modern-home-materials-marketing-img~a07116690c6c2c62_9-6685-1-6fe352d.jpg',
+						img2:
+							'https://img.iproperty.com.my/angel-legacy/1110x624-crop/static/2021/11/House-with-3-storey-is-match-to-you.jpg',
+						img3: 'https://www.dazzlingbuildings.com/wp-content/uploads/2020/08/gallery-img-D1-132.5-sqm.jpg',
+					},
+				},
+				{
+					name: 'บ้านพระนครริมน้ำ',
+					des_name: 'บ้านพักตากอากาศ',
+					ownershipTitle: 'สิทธิ์ในทรัพย์',
+					ownership: 'เจ้าของ 100%',
+					sizeTitle: 'ขนาดพื้นที่',
+					size: '120 ตรม.',
+					detailTitle: 'รายละเอียด',
+					detail: 'ถาระติดผัน เช่น ผ่อนกับธนาคาร XYZ 30ปีจะสิ้นสุดใน กพ. 81',
+					valueTitle: 'มูลค่า',
+					value: '7.5 ล้านบาท',
+					addressTitle: 'ที่อยู่',
+					address: '107/42 แขวงบางจาก เขตพระโขนง จังหวัดกรุงเทพฯ 10260',
+					other_detailTitle: 'คำอธิบายเพิ่มเติม',
+					other_detail: 'บ้านริมน้ำอายุ 100 ปี สภาพมีผุพังพอประมาณ',
+					documentTitle: 'เอกสาร',
+					document: 'File name.pdf',
+					img: {
+						img1:
+							'https://st.hzcdn.com/simgs/pictures/exteriors/denver-modern-home-materials-marketing-img~a07116690c6c2c62_9-6685-1-6fe352d.jpg',
+						img2:
+							'https://img.iproperty.com.my/angel-legacy/1110x624-crop/static/2021/11/House-with-3-storey-is-match-to-you.jpg',
+						img3: 'https://www.dazzlingbuildings.com/wp-content/uploads/2020/08/gallery-img-D1-132.5-sqm.jpg',
+					},
+				},
+			],
 		},
 		{
 			id: 2,
@@ -38,6 +158,7 @@ const AddPropertyDetail = () => {
 			img: img2,
 			des: 'โฉนดที่ดิน/นส.3,นส.3ก/สปก.4-01/ภ.บ.ท.5',
 			navigate: '/Property_region',
+			data: getDataWithAPI,
 		},
 		{
 			id: 3,
@@ -149,46 +270,328 @@ const AddPropertyDetail = () => {
 					return (
 						<>
 							<div key={index} style={{width: '100%', display: 'flex', justifyContent: 'flex-start'}}>
-								<p className='HTextDBFame2'>{item?.title}</p>
+								<p className='HTextDBFame2'>{item?.title} </p>
 							</div>
-							<div className='InPersonalFame2'>
-								<div className='HAddPersonalFame2'>
-									<div
-										style={{
-											display: 'flex',
-											justifyContent: 'center',
-											width: '100%',
-											flex: 1,
-											flexDirection: 'column',
-											alignItems: 'center',
-										}}
-									>
+							<div
+								// className='InPersonalFame2'
+								style={{
+									display: 'flex',
+									flexDirection: 'row',
+									flexWrap: windowSize[0] < 1000 ? 'nowrap' : 'wrap',
+									justifyContent: windowSize[0] < 1000 ? 'center' : 'flex-start',
+									overflowY: windowSize[0] < 1000 && item?.data ? 'scroll' : 'visible',
+								}}
+							>
+								{item?.data ? (
+									<>
+										{item.data.map((row, indexs) => {
+											console.log('{item.data[index].name}', row);
+											return (
+												<div
+													key={indexs}
+													style={{
+														display: 'flex',
+													}}
+												>
+													<div style={styles.divMapTop}>
+														{windowSize[0] < 1000 ? (
+															//  ================== MOBILE ==================
+															<div style={styles.containerMobile}>
+																<div
+																	style={{
+																		display: 'flex',
+																		width: windowSize[0] > 1000 ? window.innerWidth / 4.51 : '100%',
+																		flexWrap: 'wrap',
+																		position: 'relative',
+																		justifyContent: 'center',
+																		alignItems: 'center',
+																		marginBottom: windowSize[0] > 1000 ? '40px' : '20px',
+																		marginTop: '20px',
+																	}}
+																>
+																	<div className='InPersonalFame777' style={styles.topFrame}>
+																		<div style={{height: 'auto', display: 'flex', width: '100%'}}>
+																			<div
+																				style={{
+																					display: 'flex',
+																					flexDirection: 'row',
+																					justifyContent: 'flex-start',
+																					alignItems: 'center',
+																				}}
+																			>
+																				<div style={{width: '100px', height: '100px'}}>
+																					<div
+																						style={{
+																							backgroundImage: `url(${item?.img})`,
+																							width: '100%',
+																							height: '100%',
+																							backgroundSize: 'cover',
+																						}}
+																					/>
+																				</div>
+																				<div style={{display: 'flex', alignItems: 'center', flexDirection: 'column'}}>
+																					<div>{row.name}</div>
+																					<div style={styles.titleT}>{row.des_name}</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div
+																			style={{
+																				display: 'flex',
+																				flexDirection: 'column',
+																				flex: 1,
+																				marginLeft: '10px',
+																				marginRight: '10px',
+																			}}
+																		>
+																			{/* row 2 */}
+																			<div style={styles.divTopRow}>
+																				<div style={styles.flex05}>
+																					<div style={styles.titleT}>{row.ownershipTitle}</div>
+																					<div style={styles.titleB}>{row.ownership}</div>
+																				</div>
+																				<div style={styles.flex05}>
+																					<div style={styles.titleT}>{row.sizeTitle}</div>
+																					<div style={styles.titleB}>{row.size}</div>
+																				</div>
+																			</div>
+																			{/* row full */}
+																			<div style={styles.divTopRow}>
+																				<div style={styles.flex10}>
+																					<div style={styles.titleT}>{row.detailTitle}</div>
+																					<div style={styles.titleB}>{row.detail}</div>
+																				</div>
+																			</div>
+																			{/* row full */}
+																			<div style={styles.divTopRow}>
+																				<div style={styles.flex10}>
+																					<div style={styles.titleT}>{row.valueTitle}</div>
+																					<div style={styles.titleB}>{row.value}</div>
+																				</div>
+																			</div>
+																			{/* row 1 */}
+																			<div style={styles.divTopRow}>
+																				<div style={styles.flex10}>
+																					<div style={styles.titleT}>{row.addressTitle}</div>
+																					<div style={styles.titleB}>{row.address}</div>
+																				</div>
+																			</div>
+																			{/* row full */}
+																			<div style={styles.divTopRow}>
+																				<div style={styles.flex10}>
+																					<div style={styles.titleT}>{row.other_detailTitle}</div>
+																					<div style={styles.titleB}>{row.other_detail}</div>
+																				</div>
+																			</div>
+																			{/* row full */}
+																			<div style={styles.divTopRow}>
+																				<div style={styles.flex10}>
+																					<div style={styles.titleT}>{row.documentTitle}</div>
+																					<div style={styles.titleB}>{row.document}</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														) : (
+															//  ================== DESKTOP ==================
+															<div
+																style={{
+																	display: 'flex',
+																	width: windowSize[0] > 1000 ? window.innerWidth / 4.51 : '100%',
+																	flexWrap: 'wrap',
+																	position: 'relative',
+																	justifyContent: 'center',
+																	alignItems: 'center',
+																	marginBottom: '40px',
+																}}
+															>
+																<div
+																	className='InPersonalFame777'
+																	style={{
+																		width: '90%',
+																		height: '100%',
+																		display: 'flex',
+																		flexDirection: 'column',
+																	}}
+																>
+																	<div style={{height: 'auto', display: 'flex', width: '100%'}}>
+																		<div
+																			style={{
+																				display: 'flex',
+																				flexDirection: 'row',
+																				justifyContent: 'flex-start',
+																				alignItems: 'center',
+																			}}
+																		>
+																			<div style={{width: '100px', height: '100px'}}>
+																				<div
+																					style={{
+																						backgroundImage: `url(${item?.img})`,
+																						width: '100%',
+																						height: '100%',
+																						backgroundSize: 'cover',
+																					}}
+																				/>
+																			</div>
+																			<div style={{display: 'flex', alignItems: 'center', flexDirection: 'column'}}>
+																				<div>{row.name}</div>
+																				<div style={styles.titleT}>{row.des_name}</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div
+																		style={{
+																			display: 'flex',
+																			flexDirection: 'column',
+																			flex: 1,
+																			marginLeft: '10px',
+																			marginRight: '10px',
+																		}}
+																	>
+																		{/* row 2 */}
+																		<div
+																			style={{
+																				display: 'flex',
+																				flexDirection: 'row',
+																				flex: 1,
+																				justifyContent: 'space-between',
+																				marginTop: '10px',
+																			}}
+																		>
+																			<div style={styles.flex05}>
+																				<div style={styles.titleT}>{row.ownershipTitle}</div>
+																				<div style={styles.titleB}>{row.ownership}</div>
+																			</div>
+																			<div style={styles.flex05}>
+																				<div style={styles.titleT}>{row.sizeTitle}</div>
+																				<div style={styles.titleB}>{row.size}</div>
+																			</div>
+																		</div>
+																		{/* row full */}
+																		<div
+																			style={{
+																				display: 'flex',
+																				flexDirection: 'row',
+																				flex: 1,
+																				justifyContent: 'space-between',
+																				marginTop: '10px',
+																			}}
+																		>
+																			<div style={styles.flex10}>
+																				<div style={styles.titleT}>{row.detailTitle}</div>
+																				<div style={styles.titleB}>{row.detail}</div>
+																			</div>
+																		</div>
+																		{/* row full */}
+																		<div
+																			style={{
+																				display: 'flex',
+																				flexDirection: 'row',
+																				flex: 1,
+																				justifyContent: 'space-between',
+																				marginTop: '10px',
+																			}}
+																		>
+																			<div style={styles.flex10}>
+																				<div style={styles.titleT}>{row.valueTitle}</div>
+																				<div style={styles.titleB}>{row.value}</div>
+																			</div>
+																		</div>
+																		{/* row 1 */}
+																		<div
+																			style={{
+																				display: 'flex',
+																				flexDirection: 'row',
+																				flex: 1,
+																				justifyContent: 'space-between',
+																				marginTop: '10px',
+																			}}
+																		>
+																			<div style={styles.flex10}>
+																				<div style={styles.titleT}>{row.addressTitle}</div>
+																				<div style={styles.titleB}>{row.address}</div>
+																			</div>
+																		</div>
+																		{/* row full */}
+																		<div
+																			style={{
+																				display: 'flex',
+																				flexDirection: 'row',
+																				flex: 1,
+																				justifyContent: 'space-between',
+																				marginTop: '10px',
+																			}}
+																		>
+																			<div style={styles.flex10}>
+																				<div style={styles.titleT}>{row.other_detailTitle}</div>
+																				<div style={styles.titleB}>{row.other_detail}</div>
+																			</div>
+																		</div>
+																		{/* row full */}
+																		<div
+																			style={{
+																				display: 'flex',
+																				flexDirection: 'row',
+																				flex: 1,
+																				justifyContent: 'space-between',
+																				marginTop: '10px',
+																			}}
+																		>
+																			<div style={styles.flex10}>
+																				<div style={styles.titleT}>{row.documentTitle}</div>
+																				<div style={styles.titleB}>{row.document}</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														)}
+													</div>
+												</div>
+											);
+										})}
+									</>
+								) : (
+									<div className='HAddPersonalFame2'>
 										<div
 											style={{
-												backgroundImage: `url(${item?.img})`,
-												width: '204px',
-												height: '205px',
+												display: 'flex',
+												justifyContent: 'center',
+												width: '100%',
+												flex: 1,
+												flexDirection: 'column',
+												alignItems: 'center',
 											}}
-										/>
-										<p className='Title'>{item?.name}</p>
-										<p className='Des'>{item?.des}</p>
-										<button
-											style={{
-												border: '1px solid rgba(15, 27, 80, 1)',
-												borderRadius: 12,
-												width: '50%',
-												paddingTop: '5px',
-												paddingBottom: '5px',
-												backgroundColor: 'transparent',
-												marginBottom: '10px',
-												cursor: 'pointer',
-											}}
-											onClick={() => navigate(item?.navigate)}
 										>
-											เพิ่มข้อมูล
-										</button>
+											<div
+												style={{
+													backgroundImage: `url(${item?.img})`,
+													width: '204px',
+													height: '205px',
+												}}
+											/>
+											<p className='Title'>{item?.name}</p>
+											<p className='Des'>{item?.des}</p>
+											<button
+												style={{
+													border: '1px solid rgba(15, 27, 80, 1)',
+													borderRadius: 12,
+													width: '50%',
+													paddingTop: '5px',
+													paddingBottom: '5px',
+													backgroundColor: 'transparent',
+													marginBottom: '10px',
+													cursor: 'pointer',
+												}}
+												onClick={() => navigate(item?.navigate)}
+											>
+												เพิ่มข้อมูล
+											</button>
+										</div>
 									</div>
-								</div>
+								)}
 							</div>
 						</>
 					);
@@ -286,6 +689,58 @@ const styles = {
 		height: '52px',
 		color: '#fff',
 		fontSize: '32px',
+	},
+	titleT: {
+		fontFamily: 'Kanit',
+		fontSize: '12px',
+		color: 'rgba(91, 91, 91, 1)',
+	},
+	titleB: {
+		fontFamily: 'Kanit',
+		fontSize: '18px',
+		fontWeight: '400',
+		color: 'rgba(47, 47, 47, 1)',
+	},
+	divMapTop: {
+		display: 'flex',
+		flex: 1,
+		justifyContent: 'flex-end',
+		flexWrap: 'wrap',
+		flexDirection: 'row',
+	},
+	topFrame: {
+		width: '90%',
+		height: '100%',
+		display: 'flex',
+		flexDirection: 'column',
+	},
+	containerMobile: {
+		display: 'flex',
+		flexDirection: 'row',
+		width: window.innerWidth / 2,
+		height: 'auto',
+		overflowY: 'scroll',
+		flexGrow: 1,
+		justifyContent: 'center',
+		alignItems: 'center',
+		alignContent: 'center',
+	},
+	divTopRow: {
+		display: 'flex',
+		flexDirection: 'row',
+		flex: 1,
+		justifyContent: 'space-between',
+		marginTop: '10px',
+	},
+	flex05: {
+		display: 'flex',
+		flex: 0.5,
+		flexDirection: 'column',
+	},
+	flex10: {
+		display: 'flex',
+		flex: 1,
+		flexDirection: 'column',
 	},
 };
 

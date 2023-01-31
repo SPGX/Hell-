@@ -40,7 +40,11 @@ const Property_save = () => {
 					<div style={styles.TextTop}>
 						<div style={styles.textTitle}>ชื่อทรัพย์สิน</div>
 						<div>
-							<input style={styles.TextInputs} defaultValue={''} placeholder={'ชื่อที่ผู้รับมรดกจะเข้าใจได้โดยง่ายและบอกความรู้สึกแทนใจได้'} />
+							<input
+								style={styles.TextInputs}
+								defaultValue={''}
+								placeholder={'ชื่อที่ผู้รับมรดกจะเข้าใจได้โดยง่ายและบอกความรู้สึกแทนใจได้'}
+							/>
 						</div>
 					</div>
 					{/* 1 row */}
