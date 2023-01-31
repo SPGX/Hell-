@@ -21,10 +21,9 @@ import './AddProperty.css';
 
 const AddPropertyDetail = () => {
 	const navigate = useNavigate();
+	const [getDataWithAPI] = useState('');
 
 	const [windowSize, setWindowSize] = useState([window.innerWidth, window.innerHeight]);
-
-	const [getDataWithAPI, setgetDataWithAPI] = useState('');
 
 	useEffect(() => {
 		const handleWindowResize = () => {
@@ -32,11 +31,9 @@ const AddPropertyDetail = () => {
 		};
 
 		window.addEventListener('resize', handleWindowResize);
-		console.log('windowSize 1', windowSize[0]);
 
 		return () => {
 			window.removeEventListener('resize', handleWindowResize);
-			console.log('windowSize 2', windowSize[0]);
 		};
 	});
 
@@ -291,6 +288,8 @@ const AddPropertyDetail = () => {
 													key={indexs}
 													style={{
 														display: 'flex',
+														justifyContent: 'center',
+														alignItems: 'center',
 													}}
 												>
 													<div style={styles.divMapTop}>
@@ -506,20 +505,22 @@ const AddPropertyDetail = () => {
 										})}
 									</>
 								) : (
-									<div className='HAddPersonalFame2'>
-										<div style={styles.divAddData}>
-											<div
-												style={{
-													backgroundImage: `url(${item?.img})`,
-													width: '204px',
-													height: '205px',
-												}}
-											/>
-											<p className='Title'>{item?.name}</p>
-											<p className='Des'>{item?.des}</p>
-											<button style={styles.AddData} onClick={() => navigate(item?.navigate)}>
-												เพิ่มข้อมูล
-											</button>
+									<div style={{width: '100%'}}>
+										<div className='HAddPersonalFame2'>
+											<div style={styles.divAddData}>
+												<div
+													style={{
+														backgroundImage: `url(${item?.img})`,
+														width: '204px',
+														height: '205px',
+													}}
+												/>
+												<p className='Title'>{item?.name}</p>
+												<p className='Des'>{item?.des}</p>
+												<button style={styles.AddData} onClick={() => navigate(item?.navigate)}>
+													เพิ่มข้อมูล
+												</button>
+											</div>
 										</div>
 									</div>
 								)}
