@@ -451,15 +451,7 @@ const AddPropertyDetail = () => {
 																		}}
 																	>
 																		{/* row 2 */}
-																		<div
-																			style={{
-																				display: 'flex',
-																				flexDirection: 'row',
-																				flex: 1,
-																				justifyContent: 'space-between',
-																				marginTop: '10px',
-																			}}
-																		>
+																		<div style={styles.divFull}>
 																			<div style={styles.flex05}>
 																				<div style={styles.titleT}>{row.ownershipTitle}</div>
 																				<div style={styles.titleB}>{row.ownership}</div>
@@ -470,75 +462,35 @@ const AddPropertyDetail = () => {
 																			</div>
 																		</div>
 																		{/* row full */}
-																		<div
-																			style={{
-																				display: 'flex',
-																				flexDirection: 'row',
-																				flex: 1,
-																				justifyContent: 'space-between',
-																				marginTop: '10px',
-																			}}
-																		>
+																		<div style={styles.divFull}>
 																			<div style={styles.flex10}>
 																				<div style={styles.titleT}>{row.detailTitle}</div>
 																				<div style={styles.titleB}>{row.detail}</div>
 																			</div>
 																		</div>
 																		{/* row full */}
-																		<div
-																			style={{
-																				display: 'flex',
-																				flexDirection: 'row',
-																				flex: 1,
-																				justifyContent: 'space-between',
-																				marginTop: '10px',
-																			}}
-																		>
+																		<div style={styles.divFull}>
 																			<div style={styles.flex10}>
 																				<div style={styles.titleT}>{row.valueTitle}</div>
 																				<div style={styles.titleB}>{row.value}</div>
 																			</div>
 																		</div>
 																		{/* row 1 */}
-																		<div
-																			style={{
-																				display: 'flex',
-																				flexDirection: 'row',
-																				flex: 1,
-																				justifyContent: 'space-between',
-																				marginTop: '10px',
-																			}}
-																		>
+																		<div style={styles.divFull}>
 																			<div style={styles.flex10}>
 																				<div style={styles.titleT}>{row.addressTitle}</div>
 																				<div style={styles.titleB}>{row.address}</div>
 																			</div>
 																		</div>
 																		{/* row full */}
-																		<div
-																			style={{
-																				display: 'flex',
-																				flexDirection: 'row',
-																				flex: 1,
-																				justifyContent: 'space-between',
-																				marginTop: '10px',
-																			}}
-																		>
+																		<div style={styles.divFull}>
 																			<div style={styles.flex10}>
 																				<div style={styles.titleT}>{row.other_detailTitle}</div>
 																				<div style={styles.titleB}>{row.other_detail}</div>
 																			</div>
 																		</div>
 																		{/* row full */}
-																		<div
-																			style={{
-																				display: 'flex',
-																				flexDirection: 'row',
-																				flex: 1,
-																				justifyContent: 'space-between',
-																				marginTop: '10px',
-																			}}
-																		>
+																		<div style={styles.divFull}>
 																			<div style={styles.flex10}>
 																				<div style={styles.titleT}>{row.documentTitle}</div>
 																				<div style={styles.titleB}>{row.document}</div>
@@ -555,16 +507,7 @@ const AddPropertyDetail = () => {
 									</>
 								) : (
 									<div className='HAddPersonalFame2'>
-										<div
-											style={{
-												display: 'flex',
-												justifyContent: 'center',
-												width: '100%',
-												flex: 1,
-												flexDirection: 'column',
-												alignItems: 'center',
-											}}
-										>
+										<div style={styles.divAddData}>
 											<div
 												style={{
 													backgroundImage: `url(${item?.img})`,
@@ -574,19 +517,7 @@ const AddPropertyDetail = () => {
 											/>
 											<p className='Title'>{item?.name}</p>
 											<p className='Des'>{item?.des}</p>
-											<button
-												style={{
-													border: '1px solid rgba(15, 27, 80, 1)',
-													borderRadius: 12,
-													width: '50%',
-													paddingTop: '5px',
-													paddingBottom: '5px',
-													backgroundColor: 'transparent',
-													marginBottom: '10px',
-													cursor: 'pointer',
-												}}
-												onClick={() => navigate(item?.navigate)}
-											>
+											<button style={styles.AddData} onClick={() => navigate(item?.navigate)}>
 												เพิ่มข้อมูล
 											</button>
 										</div>
@@ -602,7 +533,6 @@ const AddPropertyDetail = () => {
 							style={{
 								display: 'flex',
 								justifyContent: 'flex-start',
-								// width: '100%',
 								flex: 1,
 								flexDirection: 'row',
 								alignItems: 'center',
@@ -636,20 +566,7 @@ const AddPropertyDetail = () => {
 								</div>
 							</div>
 							<div style={{display: 'flex', flex: 1, justifyContent: 'center'}}>
-								<button
-									style={{
-										borderRadius: 12,
-										width: '70%',
-										paddingTop: '5px',
-										paddingBottom: '5px',
-										backgroundImage: 'linear-gradient(#FBBD00,#FD8F01)',
-										marginBottom: '10px',
-										border: '0px solid #ffff',
-										color: '#fff',
-										cursor: 'pointer',
-									}}
-									onClick={() => {}}
-								>
+								<button style={styles.buttonPremium} onClick={() => {}}>
 									อัพเกรด Premium
 								</button>
 							</div>
@@ -741,6 +658,42 @@ const styles = {
 		display: 'flex',
 		flex: 1,
 		flexDirection: 'column',
+	},
+	AddData: {
+		border: '1px solid rgba(15, 27, 80, 1)',
+		borderRadius: 12,
+		width: '50%',
+		paddingTop: '5px',
+		paddingBottom: '5px',
+		backgroundColor: 'transparent',
+		marginBottom: '10px',
+		cursor: 'pointer',
+	},
+	buttonPremium: {
+		borderRadius: 12,
+		width: '70%',
+		paddingTop: '5px',
+		paddingBottom: '5px',
+		backgroundImage: 'linear-gradient(#FBBD00,#FD8F01)',
+		marginBottom: '10px',
+		border: '0px solid #ffff',
+		color: '#fff',
+		cursor: 'pointer',
+	},
+	divAddData: {
+		display: 'flex',
+		justifyContent: 'center',
+		width: '100%',
+		flex: 1,
+		flexDirection: 'column',
+		alignItems: 'center',
+	},
+	divFull: {
+		display: 'flex',
+		flexDirection: 'row',
+		flex: 1,
+		justifyContent: 'space-between',
+		marginTop: '10px',
 	},
 };
 
