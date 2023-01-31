@@ -74,8 +74,8 @@ const AddPropertyDetail = () => {
 					},
 				},
 				{
-					name: 'บ้านพระนครริมน้ำ',
-					des_name: 'บ้านพักตากอากาศ',
+					name: 'บ้านพระนครริมน้ำdsadsadsadsad',
+					des_name: 'บ้านพักตากอากาศddddsadsadsad',
 					ownershipTitle: 'สิทธิ์ในทรัพย์',
 					ownership: 'เจ้าของ 100%',
 					sizeTitle: 'ขนาดพื้นที่',
@@ -96,6 +96,35 @@ const AddPropertyDetail = () => {
 						img2:
 							'https://img.iproperty.com.my/angel-legacy/1110x624-crop/static/2021/11/House-with-3-storey-is-match-to-you.jpg',
 						img3: 'https://www.dazzlingbuildings.com/wp-content/uploads/2020/08/gallery-img-D1-132.5-sqm.jpg',
+						img4:
+							'https://st.hzcdn.com/simgs/pictures/exteriors/denver-modern-home-materials-marketing-img~a07116690c6c2c62_9-6685-1-6fe352d.jpg',
+					},
+				},
+				{
+					name: 'บ้านพระนครริมน้ำtweretwtwt',
+					des_name: 'บ้านพักตากอากาศtretewttewtw',
+					ownershipTitle: 'สิทธิ์ในทรัพย์',
+					ownership: 'เจ้าของ 100%',
+					sizeTitle: 'ขนาดพื้นที่',
+					size: '120 ตรม.',
+					detailTitle: 'รายละเอียด',
+					detail: 'ถาระติดผัน เช่น ผ่อนกับธนาคาร XYZ 30ปีจะสิ้นสุดใน กพ. 81',
+					valueTitle: 'มูลค่า',
+					value: '7.5 ล้านบาท',
+					addressTitle: 'ที่อยู่',
+					address: '107/42 แขวงบางจาก เขตพระโขนง จังหวัดกรุงเทพฯ 10260',
+					other_detailTitle: 'คำอธิบายเพิ่มเติม',
+					other_detail: 'บ้านริมน้ำอายุ 100 ปี สภาพมีผุพังพอประมาณ',
+					documentTitle: 'เอกสาร',
+					document: 'File name.pdf',
+					img: {
+						img1:
+							'https://st.hzcdn.com/simgs/pictures/exteriors/denver-modern-home-materials-marketing-img~a07116690c6c2c62_9-6685-1-6fe352d.jpg',
+						img2:
+							'https://img.iproperty.com.my/angel-legacy/1110x624-crop/static/2021/11/House-with-3-storey-is-match-to-you.jpg',
+						img3: 'https://www.dazzlingbuildings.com/wp-content/uploads/2020/08/gallery-img-D1-132.5-sqm.jpg',
+						img4:
+							'https://st.hzcdn.com/simgs/pictures/exteriors/denver-modern-home-materials-marketing-img~a07116690c6c2c62_9-6685-1-6fe352d.jpg',
 					},
 				},
 				{
@@ -121,31 +150,8 @@ const AddPropertyDetail = () => {
 						img2:
 							'https://img.iproperty.com.my/angel-legacy/1110x624-crop/static/2021/11/House-with-3-storey-is-match-to-you.jpg',
 						img3: 'https://www.dazzlingbuildings.com/wp-content/uploads/2020/08/gallery-img-D1-132.5-sqm.jpg',
-					},
-				},
-				{
-					name: 'บ้านพระนครริมน้ำ',
-					des_name: 'บ้านพักตากอากาศ',
-					ownershipTitle: 'สิทธิ์ในทรัพย์',
-					ownership: 'เจ้าของ 100%',
-					sizeTitle: 'ขนาดพื้นที่',
-					size: '120 ตรม.',
-					detailTitle: 'รายละเอียด',
-					detail: 'ถาระติดผัน เช่น ผ่อนกับธนาคาร XYZ 30ปีจะสิ้นสุดใน กพ. 81',
-					valueTitle: 'มูลค่า',
-					value: '7.5 ล้านบาท',
-					addressTitle: 'ที่อยู่',
-					address: '107/42 แขวงบางจาก เขตพระโขนง จังหวัดกรุงเทพฯ 10260',
-					other_detailTitle: 'คำอธิบายเพิ่มเติม',
-					other_detail: 'บ้านริมน้ำอายุ 100 ปี สภาพมีผุพังพอประมาณ',
-					documentTitle: 'เอกสาร',
-					document: 'File name.pdf',
-					img: {
-						img1:
+						img4:
 							'https://st.hzcdn.com/simgs/pictures/exteriors/denver-modern-home-materials-marketing-img~a07116690c6c2c62_9-6685-1-6fe352d.jpg',
-						img2:
-							'https://img.iproperty.com.my/angel-legacy/1110x624-crop/static/2021/11/House-with-3-storey-is-match-to-you.jpg',
-						img3: 'https://www.dazzlingbuildings.com/wp-content/uploads/2020/08/gallery-img-D1-132.5-sqm.jpg',
 					},
 				},
 			],
@@ -319,7 +325,12 @@ const AddPropertyDetail = () => {
 																					alignItems: 'center',
 																				}}
 																			>
-																				<div style={{width: '100px', height: '100px'}}>
+																				<div
+																					style={{
+																						width: windowSize[0] > 1000 ? '100px' : '70px',
+																						height: windowSize[0] > 1000 ? '100px' : '70px',
+																					}}
+																				>
 																					<div
 																						style={{
 																							backgroundImage: `url(${item?.img})`,
@@ -329,9 +340,9 @@ const AddPropertyDetail = () => {
 																						}}
 																					/>
 																				</div>
-																				<div style={{display: 'flex', alignItems: 'center', flexDirection: 'column'}}>
-																					<div>{row.name}</div>
-																					<div style={styles.titleT}>{row.des_name}</div>
+																				<div style={{display: 'flex', alignItems: 'flex-start', flexDirection: 'column'}}>
+																					<div>{row.name.substring(0, 15)}</div>
+																					<div style={styles.titleT}>{row.des_name.substring(0, 15)}</div>
 																				</div>
 																			</div>
 																		</div>
@@ -390,6 +401,74 @@ const AddPropertyDetail = () => {
 																					<div style={styles.titleB}>{row.document}</div>
 																				</div>
 																			</div>
+																			{/* row images */}
+																			<div style={styles.divFull}>
+																				<div
+																					style={{
+																						display: 'flex',
+																						flex: 1,
+																						flexDirection: 'row',
+																						alignItems: 'center',
+																						justifyContent: 'space-between',
+																						marginBottom: '10px',
+																					}}
+																				>
+																					<div style={{width: '30px', height: '30px'}}>
+																						<div
+																							style={{
+																								backgroundImage: `url(${row.img.img1})`,
+																								width: '100%',
+																								height: '100%',
+																								backgroundSize: 'cover',
+																								borderRadius: '12px',
+																							}}
+																						/>
+																					</div>
+																					<div style={{width: '30px', height: '30px'}}>
+																						<div
+																							style={{
+																								backgroundImage: `url(${row.img.img2})`,
+																								width: '100%',
+																								height: '100%',
+																								backgroundSize: 'cover',
+																								borderRadius: '12px',
+																							}}
+																						/>
+																					</div>
+																					<div style={{width: '30px', height: '30px'}}>
+																						<div
+																							style={{
+																								backgroundImage: `url(${row.img.img3})`,
+																								width: '100%',
+																								height: '100%',
+																								backgroundSize: 'cover',
+																								borderRadius: '12px',
+																							}}
+																						/>
+																					</div>
+																					<div style={{width: '30px', height: '30px'}}>
+																						<div
+																							style={{
+																								backgroundImage: `url(${row.img.img4})`,
+																								width: '100%',
+																								height: '100%',
+																								backgroundSize: 'cover',
+																								borderRadius: '12px',
+																							}}
+																						/>
+																					</div>
+																				</div>
+																			</div>
+																			<div
+																				style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}
+																			>
+																				<button style={styles.AddButton} onClick={() => navigate(item?.navigate)}>
+																					ลบออก
+																				</button>
+																				<button style={styles.AddButton} onClick={() => navigate(item?.navigate)}>
+																					แก้ไข
+																				</button>
+																			</div>
 																		</div>
 																	</div>
 																</div>
@@ -435,9 +514,9 @@ const AddPropertyDetail = () => {
 																					}}
 																				/>
 																			</div>
-																			<div style={{display: 'flex', alignItems: 'center', flexDirection: 'column'}}>
-																				<div>{row.name}</div>
-																				<div style={styles.titleT}>{row.des_name}</div>
+																			<div style={{display: 'flex', alignItems: 'flex-start', flexDirection: 'column'}}>
+																				<div>{row.name.substring(0, 30)}</div>
+																				<div style={styles.titleT}>{row.des_name.substring(0, 30)}</div>
 																			</div>
 																		</div>
 																	</div>
@@ -554,7 +633,9 @@ const AddPropertyDetail = () => {
 																				</div>
 																			</div>
 																		</div>
-																		<div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
+																		<div
+																			style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}
+																		>
 																			<button style={styles.AddButton} onClick={() => navigate(item?.navigate)}>
 																				ลบออก
 																			</button>
