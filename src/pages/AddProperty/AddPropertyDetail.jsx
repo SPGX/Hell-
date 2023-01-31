@@ -69,6 +69,8 @@ const AddPropertyDetail = () => {
 						img2:
 							'https://img.iproperty.com.my/angel-legacy/1110x624-crop/static/2021/11/House-with-3-storey-is-match-to-you.jpg',
 						img3: 'https://www.dazzlingbuildings.com/wp-content/uploads/2020/08/gallery-img-D1-132.5-sqm.jpg',
+						img4:
+							'https://st.hzcdn.com/simgs/pictures/exteriors/denver-modern-home-materials-marketing-img~a07116690c6c2c62_9-6685-1-6fe352d.jpg',
 					},
 				},
 				{
@@ -282,7 +284,6 @@ const AddPropertyDetail = () => {
 								{item?.data ? (
 									<>
 										{item.data.map((row, indexs) => {
-											console.log('{item.data[index].name}', row);
 											return (
 												<div
 													key={indexs}
@@ -495,6 +496,72 @@ const AddPropertyDetail = () => {
 																				<div style={styles.titleB}>{row.document}</div>
 																			</div>
 																		</div>
+																		{/* row images */}
+																		<div style={styles.divFull}>
+																			<div
+																				style={{
+																					display: 'flex',
+																					flex: 1,
+																					flexDirection: 'row',
+																					alignItems: 'center',
+																					justifyContent: 'space-between',
+																					marginBottom: '10px',
+																				}}
+																			>
+																				<div style={{width: '4vw', height: '4vw'}}>
+																					<div
+																						style={{
+																							backgroundImage: `url(${row.img.img1})`,
+																							width: '100%',
+																							height: '100%',
+																							backgroundSize: 'cover',
+																							borderRadius: '12px',
+																						}}
+																					/>
+																				</div>
+																				<div style={{width: '4vw', height: '4vw'}}>
+																					<div
+																						style={{
+																							backgroundImage: `url(${row.img.img2})`,
+																							width: '100%',
+																							height: '100%',
+																							backgroundSize: 'cover',
+																							borderRadius: '12px',
+																						}}
+																					/>
+																				</div>
+																				<div style={{width: '4vw', height: '4vw'}}>
+																					<div
+																						style={{
+																							backgroundImage: `url(${row.img.img3})`,
+																							width: '100%',
+																							height: '100%',
+																							backgroundSize: 'cover',
+																							borderRadius: '12px',
+																						}}
+																					/>
+																				</div>
+																				<div style={{width: '4vw', height: '4vw'}}>
+																					<div
+																						style={{
+																							backgroundImage: `url(${row.img.img4})`,
+																							width: '100%',
+																							height: '100%',
+																							backgroundSize: 'cover',
+																							borderRadius: '12px',
+																						}}
+																					/>
+																				</div>
+																			</div>
+																		</div>
+																		<div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
+																			<button style={styles.AddButton} onClick={() => navigate(item?.navigate)}>
+																				ลบออก
+																			</button>
+																			<button style={styles.AddButton} onClick={() => navigate(item?.navigate)}>
+																				แก้ไข
+																			</button>
+																		</div>
 																	</div>
 																</div>
 															</div>
@@ -664,6 +731,16 @@ const styles = {
 		border: '1px solid rgba(15, 27, 80, 1)',
 		borderRadius: 12,
 		width: '50%',
+		paddingTop: '5px',
+		paddingBottom: '5px',
+		backgroundColor: 'transparent',
+		marginBottom: '10px',
+		cursor: 'pointer',
+	},
+	AddButton: {
+		border: '1px solid rgba(15, 27, 80, 1)',
+		borderRadius: 12,
+		width: '48%',
 		paddingTop: '5px',
 		paddingBottom: '5px',
 		backgroundColor: 'transparent',
