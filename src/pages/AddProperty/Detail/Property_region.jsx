@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 
 import {useNavigate} from 'react-router-dom';
 import Select from 'react-select';
@@ -15,13 +15,27 @@ import '../AddProperty.css';
 const Property_region = () => {
 	const navigate = useNavigate();
 	const [images, setImages] = useState(0); // 1 data = true
-	const [uploadmore, setUploadMore] = useState(0);  //1 data = true
+	const [uploadmore, setUploadMore] = useState(0); //1 data = true
 
 	const upload = [{id: 1}, {id: 2}, {id: 3}];
 
+	const [windowSize, setWindowSize] = useState([window.innerWidth, window.innerHeight]);
+
+	useEffect(() => {
+		const handleWindowResize = () => {
+			setWindowSize([window.innerWidth, window.innerHeight]);
+		};
+
+		window.addEventListener('resize', handleWindowResize);
+
+		return () => {
+			window.removeEventListener('resize', handleWindowResize);
+		};
+	});
+
 	return (
 		<>
-			<div className='AddInsurance'>
+			<div className='AddInsurance' style={{padding: windowSize[0] > 1000 ? '15%' : '0%', paddingTop: '10px'}}>
 				<div className='AddInsuranceFame1'>
 					<p className='HTextAddInsuranceFame1'>Dashboard </p>
 					<p className='HTextAddInsuranceFame1_2'>{'>'}</p>
@@ -340,7 +354,7 @@ const Property_region = () => {
 					)}
 				</div>
 			</div>
-			<div className='AddInsurance'>
+			<div className='AddInsurance' style={{padding: windowSize[0] > 1000 ? '15%' : '0%', paddingTop: '10px', paddingBottom: '0px'}}>
 				<div className='AddInsuranceFame2'>
 					<div style={{display: 'flex', flexDirection: 'row', alignItems: 'center', flexWrap: 'wrap'}}>
 						<div className='imgfile' />
@@ -440,7 +454,7 @@ const Property_region = () => {
 															flexDirection: 'row',
 															flexWrap: 'wrap',
 															justifyContent: 'center',
-															marginRight: '10px'
+															marginRight: '10px',
 														}}
 													>
 														<div>

@@ -248,7 +248,7 @@ const AddPropertyDetail = () => {
 	];
 
 	return (
-		<div className='AddInsurance'>
+		<div className='AddInsurance' style={{padding: windowSize[0] > 1000 ? '15%' : '0%', paddingTop: '10px'}}>
 			<div className='AddInsuranceFame1'>
 				<p className='HTextAddInsuranceFame1'>Dashboard </p>
 				<p className='HTextAddInsuranceFame1_2'>{'>'}</p>
@@ -340,7 +340,9 @@ const AddPropertyDetail = () => {
 																						}}
 																					/>
 																				</div>
-																				<div style={{display: 'flex', alignItems: 'flex-start', flexDirection: 'column'}}>
+																				<div
+																					style={{display: 'flex', alignItems: 'flex-start', flexDirection: 'column'}}
+																				>
 																					<div>{row.name.substring(0, 15)}</div>
 																					<div style={styles.titleT}>{row.des_name.substring(0, 15)}</div>
 																				</div>

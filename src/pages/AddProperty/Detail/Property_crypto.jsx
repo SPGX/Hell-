@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 
 import {useNavigate} from 'react-router-dom';
 import Select from 'react-select';
@@ -19,9 +19,23 @@ const Property_crypto = () => {
 
 	const upload = [{id: 1}, {id: 2}, {id: 3}];
 
+	const [windowSize, setWindowSize] = useState([window.innerWidth, window.innerHeight]);
+
+	useEffect(() => {
+		const handleWindowResize = () => {
+			setWindowSize([window.innerWidth, window.innerHeight]);
+		};
+
+		window.addEventListener('resize', handleWindowResize);
+
+		return () => {
+			window.removeEventListener('resize', handleWindowResize);
+		};
+	});
+
 	return (
 		<>
-			<div className='AddInsurance'>
+			<div className='AddInsurance' style={{padding: windowSize[0] > 1000 ? '15%' : '0%', paddingTop: '10px'}}>
 				<div className='AddInsuranceFame1'>
 					<p className='HTextAddInsuranceFame1'>Dashboard </p>
 					<p className='HTextAddInsuranceFame1_2'>{'>'}</p>
@@ -40,7 +54,11 @@ const Property_crypto = () => {
 					<div style={styles.TextTop}>
 						<div style={styles.textTitle}>ชื่อทรัพย์สิน</div>
 						<div>
-							<input style={styles.TextInputs} defaultValue={''} placeholder={'ชื่อที่ผู้รับมรดกจะเข้าใจได้โดยง่ายและบอกความรู้สึกแทน ใจได้'} />
+							<input
+								style={styles.TextInputs}
+								defaultValue={''}
+								placeholder={'ชื่อที่ผู้รับมรดกจะเข้าใจได้โดยง่ายและบอกความรู้สึกแทน ใจได้'}
+							/>
 						</div>
 					</div>
 
@@ -173,7 +191,7 @@ const Property_crypto = () => {
 					)}
 				</div>
 			</div>
-			<div className='AddInsurance'>
+			<div className='AddInsurance' style={{padding: windowSize[0] > 1000 ? '15%' : '0%', paddingTop: '10px'}}>
 				<div className='AddInsuranceFame2'>
 					<div style={{display: 'flex', flexDirection: 'row', alignItems: 'center', flexWrap: 'wrap'}}>
 						<div className='imgfile' />

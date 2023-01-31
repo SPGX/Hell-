@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 import Select from 'react-select';
 
 import {useNavigate} from 'react-router-dom';
@@ -39,8 +39,22 @@ const AddPropertyDetail = () => {
 	];
 	const people = require('../../img/iconpeople1.svg').default;
 
+	const [windowSize, setWindowSize] = useState([window.innerWidth, window.innerHeight]);
+
+	useEffect(() => {
+		const handleWindowResize = () => {
+			setWindowSize([window.innerWidth, window.innerHeight]);
+		};
+
+		window.addEventListener('resize', handleWindowResize);
+
+		return () => {
+			window.removeEventListener('resize', handleWindowResize);
+		};
+	});
+
 	return (
-		<div className='AddInsurance'>
+		<div className='AddInsurance' style={{padding: windowSize[0] > 1000 ? '15%' : '0%', paddingTop: '10px'}}>
 			<div className='AddInsuranceFame1'>
 				<p className='HTextAddInsuranceFame1'>Dashboard </p>
 				<p className='HTextAddInsuranceFame1_2'>{'>'}</p>

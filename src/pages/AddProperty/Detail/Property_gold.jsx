@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 
 import {useNavigate} from 'react-router-dom';
 import Select from 'react-select';
@@ -19,9 +19,23 @@ const Property_gold = () => {
 
 	const upload = [{id: 1}, {id: 2}, {id: 3}];
 
+	const [windowSize, setWindowSize] = useState([window.innerWidth, window.innerHeight]);
+
+	useEffect(() => {
+		const handleWindowResize = () => {
+			setWindowSize([window.innerWidth, window.innerHeight]);
+		};
+
+		window.addEventListener('resize', handleWindowResize);
+
+		return () => {
+			window.removeEventListener('resize', handleWindowResize);
+		};
+	});
+
 	return (
 		<>
-			<div className='AddInsuranceTop'>
+			<div className='AddInsurance' style={{padding: windowSize[0] > 1000 ? '15%' : '0%', paddingTop: '10px'}}>
 				<div className='AddInsuranceFame1'>
 					<p className='HTextAddInsuranceFame1'>Dashboard </p>
 					<p className='HTextAddInsuranceFame1_2'>{'>'}</p>
@@ -221,7 +235,7 @@ const Property_gold = () => {
 					)}
 				</div>
 			</div>
-			<div className='AddInsurance'>
+			<div className='AddInsurance' style={{padding: windowSize[0] > 1000 ? '15%' : '0%', paddingTop: '10px'}}>
 				<div className='AddInsuranceFame2'>
 					<div style={{display: 'flex', flexDirection: 'row', alignItems: 'center', flexWrap: 'wrap'}}>
 						<div className='imgfile' />
